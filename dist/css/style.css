@@ -8043,3 +8043,23 @@ button.close {
 body {
   background-color: red;
 }
+.one {
+  width: 60vh;
+  height: 150px;
+}
+.two {
+  width: 150px;
+  height: 100vh;
+  background-color: #fff;
+}
+.three {
+  max-width: 100%;
+  height: 150px;
+  background-color: #fff;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
