@@ -35,8 +35,8 @@
 									<li>
 										<a><i class="fa fa-id-card" aria-hidden="true"></i> Artists <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
-											<li><a href="form.html">Add new</a></li>
-											<li><a href="form.html">Artists (edit and delete)</a></li>
+											<li><a href="new-artist.php">Add new</a></li>
+											<li><a href="artist.php">Artists (edit and delete)</a></li>
 										</ul>
 									</li>
 									<li>
