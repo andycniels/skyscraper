@@ -12523,3 +12523,6 @@ body {
 .nav.side-menu > li.active {
   border-right: 5px solid #50a4b9;
 }
+.name {
+  display: inline-block !important;
+}
