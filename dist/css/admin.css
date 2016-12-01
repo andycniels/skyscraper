@@ -12507,3 +12507,6 @@ ul.notifications {
   min-height: 300px;
   border: 1px solid #e5e5e5;
 }
+.main_place {
+  min-height: 500px !important;
+}
