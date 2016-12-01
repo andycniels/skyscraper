@@ -12523,6 +12523,10 @@ body {
 .nav.side-menu > li.active {
   border-right: 5px solid #50a4b9;
 }
-.test {
-  padding: 0;
+.profile-name {
+  display: inline-block;
+  margin: 0;
+}
+.navbar-nav .open .dropdown-menu {
+  width: 192px;
 }
