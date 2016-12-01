@@ -12512,6 +12512,8 @@ body {
 }
 .main_place {
   min-height: 500px !important;
+  padding-bottom: 40px;
+  padding-bottom: 40px !important;
 }
 .bg-green {
   background: #50a4b9 !important;
@@ -12520,9 +12522,4 @@ body {
 .nav.side-menu > li.current-page,
 .nav.side-menu > li.active {
   border-right: 5px solid #50a4b9;
-}
-@media (max-width: 992px) {
-  footer {
-    margin-left: 0px;
-  }
 }
