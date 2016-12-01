@@ -1,0 +1,180 @@
+<!-- http://getbootstrap.com -->
+<!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
+<!DOCTYPE html>
+<html lang="da">
+	<head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Skyscraper</title>
+		<!-- Fonts fra: https://typekit.com -->
+		<script src="https://use.typekit.net/tod5pae.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<!-- Bootstrap og admin css plus theme style -->
+		<link rel="stylesheet" href="../dist/css/admin.css">
+	</head>
+	<body class="nav-md">
+		<div class="container body">
+			<div class="main_container">
+				<div class="col-md-3 left_col">
+					<div class="left_col scroll-view">
+						<div class="navbar nav_title" style="border: 0;">
+							<a href="index.html" class="site_title">
+							<img src="../icons/SSlogotest.png" alt="">
+							<span>Skyscraper</span>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+						<br />
+						<!-- sidebar menu -->
+						<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+							<div class="menu_section">
+								<ul class="nav side-menu">
+									<li>
+										<a><i class="fa fa-info-circle" aria-hidden="true"></i> About <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li><a href="form.html">Image upload (box 1)</a></li>
+											<li><a href="form.html">Short description (box 2)</a></li>
+											<li><a href="form.html">Main about (box 3)</a></li>
+											<li><a href="form.html">Quote (box 4)</a></li>
+										</ul>
+									</li>
+									</li>
+									<li>
+										<a><i class="fa fa-envelope" aria-hidden="true"></i> Contact <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li><a href="form.html">Page Contact</a></li>
+											<li><a href="form.html">Artist Contact</a></li>
+										</ul>
+									</li>
+									<li>
+										<a><i class="fa fa-id-card" aria-hidden="true"></i> Artists <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li><a href="form.html">Add new</a></li>
+											<li><a href="form.html">Artists (edit and delete)</a></li>
+										</ul>
+									</li>
+									<li>
+										<a><i class="fa fa-address-book" aria-hidden="true"></i> Catalog <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li><a href="form.html">Add new</a></li>
+											<li><a href="form.html">Catalog (edit and delete)</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /sidebar menu -->
+					</div>
+				</div>
+				<!-- top navigation -->
+				<div class="top_nav">
+					<div class="nav_menu">
+						<nav class="" role="navigation">
+							<div class="nav toggle hidden-lg hidden-md">
+								<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+							</div>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="">
+									<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										<img src="../img/jakob_d.jpg" alt="">
+										<p class="hidden-xs">Jakob Deichmann</p>
+										<span class=" fa fa-angle-down"></span>
+									</a>
+									<ul class="dropdown-menu dropdown-usermenu pull-right">
+										<li><a class="test" href="#"><i class="fa fa-home pull-right" aria-hidden="true"></i> Go to homepage</a></li>
+										<li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+									</ul>
+								</li>
+								<li role="presentation" class="dropdown">
+									<a href="#" class="dropdown-toggle info-number">
+									<i class="fa fa-music fa-2x" aria-hidden="true"></i>
+									<span class="badge bg-green">1</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- /top navigation -->
+				<!-- page content -->
+				<div class="right_col main_place" role="main">
+					<div class="row">
+						<div class="col-md-8 col-lg-push-2">
+							<h1 class="page-header">Image upload</h1>
+							<p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
+								quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
+							</p>
+							<img class="img-responsive" src="http://placehold.it/300x300">
+							<form>
+								<div class="form-group">
+									<label for="exampleInputFile">Upload new image</label>
+									<input type="file" id="exampleInputFile"
+								</div>
+								<br>
+								<button type="submit" class="btn btn-default">Upload</button>
+							</form>
+							<h1 class="page-header">Short description</h1>
+							<p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
+								quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
+							</p>
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="headline" placeholder="Headline">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="text" placeholder="Text"></textarea>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+							<h1 class="page-header">Main about</h1>
+							<p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
+								quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
+							</p>
+							<form>
+								<h3>Box 1</h3>
+								<div class="form-group">
+									<input type="text" class="form-control" id="headline" placeholder="Headline">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="text" placeholder="Text"></textarea>
+								</div>
+								<h3>Box 2</h3>
+								<div class="form-group">
+									<input type="text" class="form-control" id="headline" placeholder="Headline">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="text" placeholder="Text"></textarea>
+								</div>
+								<h3>Box 3</h3>
+								<div class="form-group">
+									<input type="text" class="form-control" id="headline" placeholder="Headline">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="text" placeholder="Text"></textarea>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+							<h1 class="page-header">Quote</h1>
+							<p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
+								quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
+							</p>
+							<form>
+								<div class="form-group">
+									<textarea class="form-control" id="text" placeholder="Text"></textarea>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /page content -->
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="../dist/js/bootstrap.min.js"></script>
+		<!-- Custom Theme Scripts -->
+		<script src="../dist/js/custom.min.js"></script>
+	</body>
+</html>
