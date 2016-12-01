@@ -268,7 +268,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "museo-sans-display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -5157,7 +5157,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "museo-sans-display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5275,7 +5275,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "museo-sans-display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -12512,6 +12512,8 @@ body {
 }
 .main_place {
   min-height: 500px !important;
+  padding-bottom: 40px;
+  padding-bottom: 40px !important;
 }
 .bg-green {
   background: #50a4b9 !important;
@@ -12520,9 +12522,4 @@ body {
 .nav.side-menu > li.current-page,
 .nav.side-menu > li.active {
   border-right: 5px solid #50a4b9;
-}
-@media (max-width: 992px) {
-  footer {
-    margin-left: 0px;
-  }
 }
