@@ -18,4 +18,4 @@ RewriteRule ^admin/page-contact?$ admin/page-contact.php
 RewriteRule ^admin/quote?$ admin/quote.php
 
 
-RewriteRule ^user/([0-9]+) user.php?id=$1
+#RewriteRule ^user/([0-9]+) user.php?id=$1
