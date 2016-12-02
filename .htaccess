@@ -1,0 +1,21 @@
+RewriteEngine On
+
+#mainSite
+
+#admin
+RewriteRule ^admin/about-description?$ admin/about-description.php
+RewriteRule ^admin/about-image?$ admin/about-image.php
+RewriteRule ^admin/artist-contact?$ admin/artist-contact.php
+RewriteRule ^admin/artist?$ admin/artist.php
+RewriteRule ^admin/demo?$ admin/demo.php
+RewriteRule ^admin/footer?$ admin/footer.php
+RewriteRule ^admin/header?$ admin/header.php
+RewriteRule ^admin/?$ admin/index.php
+RewriteRule ^admin/main-about?$ admin/main-about.php
+RewriteRule ^admin/nav?$ admin/nav.php
+RewriteRule ^admin/new-artist?$ admin/new-artist.php
+RewriteRule ^admin/page-contact?$ admin/page-contact.php
+RewriteRule ^admin/quote?$ admin/quote.php
+
+
+RewriteRule ^user/([0-9]+) user.php?id=$1

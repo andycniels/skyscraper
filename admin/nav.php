@@ -4,7 +4,7 @@
 				<div class="col-md-3 left_col">
 					<div class="left_col scroll-view">
 						<div class="navbar nav_title" style="border: 0;">
-							<a href="index.php" class="site_title">
+							<a href="../admin/" class="site_title">
 							<img src="../icons/SSlogotest.png" alt="">
 							<span>Skyscraper</span>
 							</a>
@@ -18,25 +18,25 @@
 									<li>
 										<a><i class="fa fa-info-circle" aria-hidden="true"></i> About <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
-											<li><a href="about-image.php">Image upload (box 1)</a></li>
-											<li><a href="about-description.php">Short description (box 2)</a></li>
-											<li><a href="main-about.php">Main about (box 3)</a></li>
-											<li><a href="quote.php">Quote (box 4)</a></li>
+											<li><a href="about-image">Image upload (box 1)</a></li>
+											<li><a href="about-description">Short description (box 2)</a></li>
+											<li><a href="main-about">Main about (box 3)</a></li>
+											<li><a href="quote">Quote (box 4)</a></li>
 										</ul>
 									</li>
 									</li>
 									<li>
 										<a><i class="fa fa-envelope" aria-hidden="true"></i> Contact <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
-											<li><a href="page-contact.php">Page Contact</a></li>
-											<li><a href="artist-contact.php">Artist Contact</a></li>
+											<li><a href="page-contact">Page Contact</a></li>
+											<li><a href="artist-contact">Artist Contact</a></li>
 										</ul>
 									</li>
 									<li>
 										<a><i class="fa fa-id-card" aria-hidden="true"></i> Artists <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
-											<li><a href="new-artist.php">Add new</a></li>
-											<li><a href="artist.php">Artists (edit and delete)</a></li>
+											<li><a href="new-artist">Add new</a></li>
+											<li><a href="artist">Artists (edit and delete)</a></li>
 										</ul>
 									</li>
 									<li>
@@ -68,11 +68,11 @@
 									</a>
 									<ul class="dropdown-menu dropdown-usermenu pull-right">
 										<li><a class="test" href="../"><i class="fa fa-home pull-right" aria-hidden="true"></i> Go to homepage</a></li>
-										<li><a href="destroy.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+										<li><a href="destroy"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
 									</ul>
 								</li>
 								<li role="presentation" class="dropdown">
-									<a href="demo.php" class="dropdown-toggle info-number">
+									<a href="demo" class="dropdown-toggle info-number">
 									<i class="fa fa-music fa-2x" aria-hidden="true"></i>
 									<span class="badge bg-green">1</span>
 									</a>
