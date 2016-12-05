@@ -1,6 +1,35 @@
 <?php
+//insert
+if (isset($_POST["about"])){
+    
+    $headline = filter_input(INPUT_POST, 'headline');
+    $text = filter_input(INPUT_POST, 'text');
+
+    if(empty($_POST["headline"])){
+        $error = '<p style="color:red;">Must not be empty</p>';
+    }
+    else if(empty($_POST["text"])){
+        $error2 = '<p style="color:red;">Must not be empty</p>';
+    }else{
+        require_once '../dbcon.php';
+        $sql = 'UPDATE about SET headline=?,text=? WHERE about_id=1';
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param('ss', $headline, $text);
+        $stmt->execute();
+    }
+    
+    
+}
 include 'header.php';
 include 'nav.php';
+//select headline og tekst fra about
+require_once '../dbcon.php';
+$stmt = $link->prepare("SELECT headline, text FROM `about`");
+    $stmt->execute();
+    $stmt->bind_result($headline, $nam);
+    echo $pid;
+    while($stmt->fetch()) {	
+    }
 ?>
 <!-- page content -->
 <div class="right_col main_place" role="main">
@@ -10,14 +39,16 @@ include 'nav.php';
             <p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
                 quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
             </p>
-            <form>
+            <form action="<?php REQUEST_FILENAME ?>" method="POST">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="headline" placeholder="Headline">
+                    <?php echo $error; ?>
+                    <input type="text" class="form-control" name="headline" value="<?php echo $headline; ?>" placeholder="Headline">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="text" placeholder="Text"></textarea>
+                    <?php echo $error2; ?>
+                    <textarea class="form-control" name="text" placeholder="Text"><?php echo $nam; ?></textarea>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <input class="btn btn-default" name="about" type="submit" value="Update">
             </form>
         </div>
     </div>

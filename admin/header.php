@@ -1,8 +1,5 @@
 <!-- http://getbootstrap.com -->
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
-<?php
-include '../dbcon.php';
-?>
 <!DOCTYPE html>
 <html lang="da">
 	<head>
