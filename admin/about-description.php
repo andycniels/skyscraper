@@ -1,7 +1,6 @@
 <?php
 //insert
 if (isset($_POST["about"])){
-    
     $headline = filter_input(INPUT_POST, 'headline');
     $text = filter_input(INPUT_POST, 'text');
 
@@ -16,9 +15,8 @@ if (isset($_POST["about"])){
         $stmt = $link->prepare($sql);
         $stmt->bind_param('ss', $headline, $text);
         $stmt->execute();
+        header("Refresh:0");
     }
-    
-    
 }
 include 'header.php';
 include 'nav.php';
@@ -27,7 +25,6 @@ require_once '../dbcon.php';
 $stmt = $link->prepare("SELECT headline, text FROM `about`");
     $stmt->execute();
     $stmt->bind_result($headline, $nam);
-    echo $pid;
     while($stmt->fetch()) {	
     }
 ?>
