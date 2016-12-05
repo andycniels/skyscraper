@@ -12509,6 +12509,16 @@ ul.notifications {
 }
 body {
   font-family: "museo-sans", sans-serif;
+  background-color: #11262c;
+}
+.nav_title {
+  background-color: #142d33;
+}
+.left_col {
+  background-color: #11262c;
+}
+.nav.side-menu > li.active > a {
+  background: #142d33;
 }
 .main_place {
   min-height: 500px !important;
@@ -12535,3 +12545,8 @@ body {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+@media print {
+  body {
+    background-color: aqua;
+  }
+}
