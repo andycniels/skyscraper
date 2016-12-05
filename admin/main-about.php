@@ -1,5 +1,5 @@
 <?php
-//insert into tab1
+//update into tab1
 if (isset($_POST["tab1"])){
     $bh = filter_input(INPUT_POST, 'bh');
     $bt = filter_input(INPUT_POST, 'bt');
@@ -18,7 +18,7 @@ if (isset($_POST["tab1"])){
         header("Refresh:0");
     }
 }
-//insert into tab2
+//update into tab2
 if (isset($_POST["tab2"])){
     $bh = filter_input(INPUT_POST, 'bh');
     $bt = filter_input(INPUT_POST, 'bt');
@@ -37,7 +37,7 @@ if (isset($_POST["tab2"])){
         header("Refresh:0");
     }
 }
-//insert into tab3
+//update into tab3
 if (isset($_POST["tab3"])){
     $bh = filter_input(INPUT_POST, 'bh');
     $bt = filter_input(INPUT_POST, 'bt');

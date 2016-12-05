@@ -1,11 +1,17 @@
 <!-- http://getbootstrap.com -->
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
+<?php
+//jeg tager url'en som jeg er på og vælger det sidste, fjerner .php
+$title = basename($_SERVER['PHP_SELF'],'.php');
+// her lave jeg - og til mellemrum
+$title = str_replace('-', ' ', $title);
+?>
 <!DOCTYPE html>
 <html lang="da">
 	<head>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Skyscraper</title>
+		<title>Skyscraper - <?php echo $title ?></title>
 		<!-- Fonts fra: https://typekit.com -->
 		<script src="https://use.typekit.net/tod5pae.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>

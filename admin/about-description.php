@@ -1,5 +1,5 @@
 <?php
-//insert
+//Update
 if (isset($_POST["about"])){
     $headline = filter_input(INPUT_POST, 'headline');
     $text = filter_input(INPUT_POST, 'text');
