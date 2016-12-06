@@ -50,6 +50,10 @@ h2 {
     padding: 0;
 }
 
+h4 {
+    font-family: @font-primary;
+}
+
 .text-left {
     margin-left: -27%;
     margin-bottom: 0;
@@ -60,7 +64,8 @@ h2 {
     color: @brand-primary;
 }
 
-.hero-btn {color: @brand-white; border-color: @brand-white; border-width: 2px; margin-top: 20px; font-family: @font-primary; font-weight: 900; 
+.hero-btn {color: @brand-white; border-color: @brand-white; border-width: 2px; margin-top: 20px; font-family: @font-primary; font-weight: 900; position: relative;
+    top: 70px;
     &:hover {
         background-color: @brand-white;
         color: @brand-primary;
@@ -78,6 +83,9 @@ h2 {
 
 .fa-chevron-down {
     color: @brand-white;
+    position: relative;
+    top: 70px;
+    font-size: 2em;
 }
 
 .box-top-left {
@@ -100,10 +108,12 @@ h2 {
     padding: 0;
 }
 
-.box-top-right img {
+.box-top-right .about-quote {
     height: 100%;
     position: absolute;
-    
+    text-transform: uppercase;
+    background-color: @brand-white;
+    padding: 100px;
 }
 
 /* Extra small devices (phones, less than 768px) */

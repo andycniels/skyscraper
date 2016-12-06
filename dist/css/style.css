@@ -8080,6 +8080,9 @@ h2 {
   margin: 0;
   padding: 0;
 }
+h4 {
+  font-family: "museo-sans", sans-serif;
+}
 .text-left {
   margin-left: -27%;
   margin-bottom: 0;
@@ -8095,6 +8098,8 @@ h2 {
   margin-top: 20px;
   font-family: "museo-sans", sans-serif;
   font-weight: 900;
+  position: relative;
+  top: 70px;
 }
 .hero-btn:hover {
   background-color: #f3f3f3;
@@ -8110,6 +8115,9 @@ h2 {
 }*/
 .fa-chevron-down {
   color: #f3f3f3;
+  position: relative;
+  top: 70px;
+  font-size: 2em;
 }
 .box-top-left {
   height: 700px;
@@ -8128,9 +8136,12 @@ h2 {
   margin: 0;
   padding: 0;
 }
-.box-top-right img {
+.box-top-right .about-quote {
   height: 100%;
   position: absolute;
+  text-transform: uppercase;
+  background-color: #f3f3f3;
+  padding: 100px;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
