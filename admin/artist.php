@@ -7,7 +7,7 @@ include 'nav.php';
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
             <h1 class="page-header">Artist</h1>
-            <p>Edit or delete artists.</p>
+            <p>View, edit or delete artists.</p>
             <table class="table table-striped table-hover">
                 <tr>
                     <th>Img</th>
