@@ -6,5 +6,19 @@
 		<script src="../dist/js/bootstrap.min.js"></script>
 		<!-- Custom Theme Scripts -->
 		<script src="../dist/js/custom.min.js"></script>
+        <!-- Show a thumbnail above the file input -->
+        <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#thumbnail')
+                        .attr('src', e.target.result)
+                        .width(150);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        </script>
 	</body>
 </html>

@@ -1,6 +1,9 @@
 <!-- http://getbootstrap.com -->
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
 <!-- Genre liste til music_genre fandt vi på; http://www.vfront.org/albums.sql  -->
+<!-- img thump til img upload; http://jsbin.com/hajoqexoku/edit?html,js,output  -->
+<!-- input file style: http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/  -->
+
 
 <?php
 //jeg tager url'en som jeg er på og vælger det sidste, fjerner .php
@@ -13,7 +16,15 @@ $title = str_replace('-', ' ', $title);
 	<head>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Skyscraper - <?php echo $title ?></title>
+		<title>Skyscraper 
+            <?php 
+            if ($title == 'index') {
+                echo '';
+            }else{
+                echo '- '.$title;
+            }
+            ?>
+        </title>
 		<!-- Fonts fra: https://typekit.com -->
 		<script src="https://use.typekit.net/tod5pae.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>

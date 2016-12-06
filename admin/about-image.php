@@ -14,8 +14,8 @@ include 'nav.php';
             <img class="img-responsive" src="http://placehold.it/300x300">
             <form>
                 <div class="form-group">
-                    <label for="exampleInputFile">Upload new image</label>
-                    <input type="file" id="exampleInputFile"
+                    <img class="input-thumb" id="thumbnail">
+                    <input type='file' onchange="readURL(this);" />
                 </div>
                 <br>
                 <button type="submit" class="btn btn-default">Upload</button>

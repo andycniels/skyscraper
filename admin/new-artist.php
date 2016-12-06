@@ -106,10 +106,10 @@ include 'nav.php';
                 <div class="form-group">
                     <textarea class="form-control" name="band_text" placeholder="Description"></textarea>
                 </div>
-                <?php echo $error5; ?>
                 <div class="form-group">
-                    <label for="exampleInputFile">Band image</label>
-                    <input type="file" name="band_img" id="exampleInputFile"
+                    <img class="input-thumb" id="thumbnail">
+                    <?php echo $error5; ?>
+                    <input type="file" name="band_img" id="exampleInputFile" onchange="readURL(this);">
                 </div>
                 <br>
                 <?php echo $error6; ?>
