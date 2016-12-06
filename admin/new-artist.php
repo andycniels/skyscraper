@@ -9,11 +9,35 @@ include 'nav.php';
             <h1 class="page-header">Add new artist</h1>
             <form>
                 <select class="form-control">
-                    <option>Vælg label</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <option value="">Label</option>
+                <?php
+                    require_once '../dbcon.php';
+                    $stmt = $link->prepare("SELECT label_id, label FROM labels");
+                    $stmt->execute();
+                    $stmt->bind_result($lid, $label);
+
+                        while($stmt->fetch()) {
+                            ?>
+                    <option value="<?= $lid ?>"><?= $label ?></option>
+                <?php
+                    }
+                ?>
+                </select>
+                <br>
+                <select class="form-control">
+                <option value="">Music genre</option>
+                <?php
+                    require_once '../dbcon.php';
+                    $stmt = $link->prepare("SELECT genre_id, genre FROM music_genre");
+                    $stmt->execute();
+                    $stmt->bind_result($gid, $genre);
+
+                        while($stmt->fetch()) {
+                            ?>
+                    <option value="<?= $gid ?>"><?= $genre ?></option>
+                <?php
+                    }
+                ?>
                 </select>
                 <br>
                 <div class="form-group">
