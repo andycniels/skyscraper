@@ -1,5 +1,7 @@
 <!-- http://getbootstrap.com -->
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
+<!-- Genre liste til music_genre fandt vi på; http://www.vfront.org/albums.sql  -->
+
 <?php
 //jeg tager url'en som jeg er på og vælger det sidste, fjerner .php
 $title = basename($_SERVER['PHP_SELF'],'.php');
