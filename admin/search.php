@@ -1,6 +1,6 @@
 <br>
 <div id="search_toggle" class="collapse">    
-    <form action="index.php" method="get">
+    <form action="../admin" method="GET">
         <div class="input-group search">
             <input type="text" class="form-control" name="search" placeholder="Search">
             <span class="input-group-btn">
