@@ -64,10 +64,15 @@
 										<li><a href="destroy"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
 									</ul>
 								</li>
-								<li role="presentation" class="dropdown">
+								<li role="presentation">
 									<a href="demo" class="dropdown-toggle info-number">
 									<i class="fa fa-music fa-2x" aria-hidden="true"></i>
 									<span class="badge bg-green">1</span>
+									</a>
+								</li>
+                                <li role="presentation">
+									<a data-toggle="collapse" data-target="#search_toggle" class="dropdown-toggle info-number">
+									<i class="fa fa-search" aria-hidden="true"></i>
 									</a>
 								</li>
 							</ul>

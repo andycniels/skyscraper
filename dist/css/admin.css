@@ -12543,6 +12543,10 @@ body {
 textarea {
   min-height: 200px;
 }
+.search {
+  width: 60%;
+  margin: auto;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
