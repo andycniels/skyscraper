@@ -10,23 +10,33 @@ include 'nav.php';
             <p>Edit or delete artists.</p>
             <table class="table table-striped table-hover">
                 <tr>
+                    <th>Img</th>
                     <th>Band name</th>
-                    <th>Contact person</th>
-                    <th>Contact phone</th>
-                    <th>Contact email</th>
+                    <th>Description</th>
+                    <th>Label</th>
+                    <th>Genre</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
                 <tr>
-                    <td>Possumus exercitation</td>
                     <td>
-                        <p>John Madsen</p>
+                        <img src="../img/jakob_d.jpg";>
                     </td>
                     <td>
-                        <p>38492938</p>
+                        <p>Jazz band</p>
                     </td>
                     <td>
-                        <p>email@hej.com</p>
+                        <p>Appellat enim ita eiusmod praesentibus. Eram iis nescius, multos laboris ad 
+                            senserit. Nam esse exquisitaque, se nam sunt quid fugiat, excepteur summis 
+                            voluptate mandaremus quo ad in quae minim quem. Possumus non eiusmod, est illum 
+                            malis ita appellat ne anim arbitror a occaecat hic iudicem enim offendit 
+                            senserit.</p>
+                    </td>
+                    <td>
+                        <p>Skyscraper</p>
+                    </td>
+                    <td>
+                        <p>pop</p>
                     </td>
                     <td><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
