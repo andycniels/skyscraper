@@ -2,7 +2,6 @@
 
 //Skyscraper custom style (Niels, Andreas, Casper og Anders)...
 .hero-header {
-    display: table;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -17,43 +16,69 @@ body {
     font-family: @font-primary;
 }
 
-.container {
-    position: absolute;
-    top: 50%;
-}
-
-.logo {
+.hero-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: translateY(30%);
     text-align: center;
 }
 
+.logo {
+}
+
 .logo img {
-    width: 20%;
+    width: 10%;
 }
 
 h1 {
     font-family: @font-secondary;
-    font-size: 5em;
+    font-size: 6em;
     color: @brand-primary;
-    text-align: center;
     font-weight: 900;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    line-height: 60px;
 }
 
 h2 {
     font-family: @font-secondary;
     color: @brand-white;
-    text-align: center;
     font-size: 3em;
     font-weight: 800;
     margin: 0;
     padding: 0;
 }
 
+.text-left {
+    margin-left: -27%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 .high-text {
     color: @brand-primary;
 }
 
+.hero-btn {color: @brand-white; border-color: @brand-white; border-width: 2px; margin-top: 20px; font-family: @font-primary; font-weight: 900; 
+    &:hover {
+        background-color: @brand-white;
+        color: @brand-primary;
+    }
+}
+
+/*.circle-down {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    border: solid 1px @brand-white;
+    border-radius: 100%;
+}*/
+
+.fa-chevron-down {
+    color: @brand-white;
+}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
