@@ -11,7 +11,7 @@ include 'nav.php';
             <?php include 'search.php'; 
             echo $search;
             ?>
-            <h1 class="page-header">Skyscraper Admin</h1>
+            <h1 class="page-header">Skyscraper</h1>
         </div>
     </div>
 </div>
