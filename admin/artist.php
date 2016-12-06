@@ -6,6 +6,7 @@ include 'nav.php';
 <div class="right_col main_place" role="main">
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
+            <?php include 'search.php'; ?>
             <h1 class="page-header">Artist</h1>
             <p>View, edit or delete artists.</p>
             <table class="table table-striped table-hover">

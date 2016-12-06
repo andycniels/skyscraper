@@ -29,6 +29,7 @@ include 'nav.php';
 <div class="right_col main_place" role="main">
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
+            <?php include 'search.php'; ?>
             <h1 class="page-header">Add new artist</h1>
             <form action="<?php REQUEST_FILENAME ?>" method="POST">
                 <select name="label" class="form-control">

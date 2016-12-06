@@ -76,6 +76,7 @@ $stmt = $link->prepare("SELECT box_headline_one,
 <div class="right_col main_place" role="main">
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
+            <?php include 'search.php'; ?>
             <h1 class="page-header">Main about</h1>
             <p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
                 quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 

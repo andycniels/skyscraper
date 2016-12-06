@@ -42,6 +42,7 @@ $stmt = $link->prepare("SELECT street, town, phone, email FROM `page_contact`");
 <div class="right_col main_place" role="main">
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
+            <?php include 'search.php'; ?>
             <h1 class="page-header">Page contact</h1>
             <p>Update Contact info here..</p>
             <form action="<?php REQUEST_FILENAME ?>" method="POST">
