@@ -8120,7 +8120,7 @@ h4 {
   font-size: 2em;
 }
 .box-top-left {
-  height: 700px;
+  height: 550px;
   overflow: hidden;
 }
 .box-top-left img {
@@ -8131,7 +8131,7 @@ h4 {
   padding: 0;
 }
 .box-top-right {
-  height: 700px;
+  height: 550px;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -8143,16 +8143,83 @@ h4 {
   background-color: #f3f3f3;
   padding-left: 10%;
   padding-top: 7%;
+  padding-right: 7%;
 }
 .box-top-right .about-quote h4 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 100;
 }
 .box-headline {
   font-family: "museo-sans", sans-serif;
   font-weight: 100;
   color: #303030;
-  font-size: 4em;
+  font-size: 3em;
+}
+.box-bottom-right {
+  height: 550px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #50a4b9;
+}
+.box-bottom-right .about-quote {
+  padding-left: 10%;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  color: #f3f3f3;
+}
+.box-bottom-right .about-quote h4 {
+  font-size: 3em;
+  font-weight: 100;
+}
+.box-bottom-left {
+  height: 550px;
+  overflow: hidden;
+  padding: 5%;
+  background-color: #f3f3f3;
+}
+.nav-tabs {
+  border: none;
+}
+.nav-tabs li a {
+  text-transform: uppercase;
+  font-family: "museo-sans-display", sans-serif;
+}
+.nav-tabs li a:hover {
+  background-color: #f3f3f3;
+  border-bottom: solid 2px #50a4b9;
+}
+.nav-tabs li.active a {
+  border: none;
+  border-bottom: solid 2px #50a4b9;
+  background-color: #f3f3f3;
+}
+.nav-tabs li.active a:hover {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #f3f3f3;
+  border-bottom: solid 2px #50a4b9;
+}
+.quote-mark {
+  display: block;
+  position: relative;
+  top: 12%;
+  left: 10%;
+}
+.quote-mark img {
+  width: 8%;
+}
+.signature {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+.jakob-ceo img {
+  width: 40%;
+  display: block;
+  margin: 2% auto;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */

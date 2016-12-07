@@ -89,7 +89,7 @@ h4 {
 }
 
 .box-top-left {
-    height: 700px;
+    height: 550px;
     overflow: hidden;
 }
 
@@ -102,7 +102,7 @@ h4 {
 }
 
 .box-top-right {
-    height: 700px;
+    height: 550px;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -115,10 +115,11 @@ h4 {
     background-color: @brand-white;
     padding-left: 10%;
     padding-top: 7%;
+    padding-right: 7%;
 }
 
 .box-top-right .about-quote h4 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 100;
 }
 
@@ -126,7 +127,86 @@ h4 {
     font-family: @font-primary;
     font-weight: 100;
     color: @brand-grey;
-    font-size: 4em;
+    font-size: 3em;
+}
+
+.box-bottom-right {
+    height: 550px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: @brand-primary;
+}
+
+.box-bottom-right .about-quote {
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    color: @brand-white;
+    
+}
+
+.box-bottom-right .about-quote h4 {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.box-bottom-left {
+    height: 550px;
+    overflow: hidden;
+    padding: 5%;
+    background-color: @brand-white;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs li a {
+    text-transform: uppercase;
+    font-family: @font-secondary;
+    &:hover {
+        background-color: @brand-white;
+        border-bottom: solid 2px @brand-primary;
+    }
+}
+
+.nav-tabs li.active a{
+    border: none; border-bottom: solid 2px @brand-primary; background-color: @brand-white;
+        &:hover {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background-color: @brand-white;
+            border-bottom: solid 2px @brand-primary;
+        }
+}
+
+
+
+.quote-mark {
+    display: block;
+    position: relative;
+    top: 12%;
+    left: 10%;
+}
+
+.quote-mark img {
+    width: 8%;
+}
+
+.signature {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.jakob-ceo img{
+    width: 40%;
+    display: block;
+    margin: 2% auto;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -134,7 +214,7 @@ h4 {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
-
+    
 }
 
 /* Medium devices (desktops, 992px and up) */
