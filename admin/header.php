@@ -31,3 +31,4 @@ $title = str_replace('-', ' ', $title);
 		<!-- Bootstrap og admin css plus theme style -->
 		<link rel="stylesheet" href="../dist/css/admin.css">
 	</head>
+    

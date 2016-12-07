@@ -4,10 +4,12 @@ if (isset($_POST["artist"])){
     $genre = filter_input(INPUT_POST, 'genre');
     $b_name = filter_input(INPUT_POST, 'band_name');
     $b_text = filter_input(INPUT_POST, 'band_text');
-    $b_img = filter_input(INPUT_POST, 'band_img');
+    $b_img = filter_input(INPUT_POST, 'fileToUpload');
     $c_name = filter_input(INPUT_POST, 'contact_name');
     $c_phone = filter_input(INPUT_POST, 'contact_phone');
     $c_email = filter_input(INPUT_POST, 'contact_email');
+    
+    echo $label . $genre . $b_name . $b_text . $b_img . $c_name . $c_phone . $c_email; 
    
     if(empty($_POST["label"])){
         $error = '<p style="color:red;">Must not be empty</p>';
@@ -21,7 +23,7 @@ if (isset($_POST["artist"])){
     else if(empty($_POST["band_text"])){
         $error4 = '<p style="color:red;">Must not be empty</p>';
     }
-    else if(empty($_POST["band_img"])){
+    else if(empty($_POST["fileToUpload"])){
         $error5 = '<p style="color:red;">Must not be empty</p>';
     }
     else if(empty($_POST["contact_name"])){
@@ -30,9 +32,14 @@ if (isset($_POST["artist"])){
     else if(empty($_POST["contact_phone"])){
         $error7 = '<p style="color:red;">Must not be empty</p>';
     }
+    else if (filter_var($c_email, FILTER_VALIDATE_EMAIL) === false) {
+        $emailVal = "<p style='color:red;'>'$c_email' is not a valid email address</p>";
+    }
     else if(empty($_POST["contact_email"])){
         $error8 = '<p style="color:red;">Must not be empty</p>';
     }else{
+        
+        
         //first insert into artist contact
         require_once '../dbcon.php';
         $sql = "INSERT INTO artist_contact (contact_name, phone, email) VALUES (?,?,?)";
@@ -51,7 +58,10 @@ if (isset($_POST["artist"])){
         $sql = "INSERT INTO `music` (band_name, img, text, fk_soundcloud_id, fk_musicgenre_id, fk_label_id, fk_artistcontact_id, fk_cat_id) VALUES (?,?,?,?,?,?,?,?)";
         $stmt = $link->prepare($sql);                 
         $stmt->bind_param('ssssssss', $b_name, $b_img, $b_text, $fk_soundcloud_id, $genre, $label, $fk_artistcontact_id, $fk_cat_id);
-        $stmt->execute(); 
+        $stmt->execute();
+        $created = ' was created';
+        
+        header("Refresh:5");
     }
 }
 include 'header.php';
@@ -63,7 +73,8 @@ include 'nav.php';
         <div class="col-md-8 col-lg-push-2">
             <?php include 'search.php'; ?>
             <h1 class="page-header">Add new artist</h1>
-            <form action="<?php REQUEST_FILENAME ?>" method="POST">
+            <h3 style="color:green;"><?= $b_name . $created ?></h3>
+            <form action="#" method="POST" enctype="multipart/form-data">
                 <?php echo $error; ?>
                 <select name="label" class="form-control">
                 <option value="">Label</option>
@@ -109,7 +120,7 @@ include 'nav.php';
                 <div class="form-group">
                     <img class="input-thumb" id="thumbnail">
                     <?php echo $error5; ?>
-                    <input type="file" name="band_img" id="exampleInputFile" onchange="readURL(this);">
+                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="readURL(this);">
                 </div>
                 <br>
                 <?php echo $error6; ?>
@@ -120,6 +131,7 @@ include 'nav.php';
                 <div class="form-group">
                     <input type="text" class="form-control" name="contact_phone" placeholder="Contact phone">
                 </div>
+                <?php echo $emailVal; ?>
                 <?php echo $error8; ?>
                 <div class="form-group">
                     <input type="text" class="form-control" name="contact_email" placeholder="Contact email">
