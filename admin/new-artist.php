@@ -1,16 +1,61 @@
 <?php
 if (isset($_POST["artist"])){
+    //make input ready
     $label = filter_input(INPUT_POST, 'label');
     $genre = filter_input(INPUT_POST, 'genre');
     $b_name = filter_input(INPUT_POST, 'band_name');
     $b_text = filter_input(INPUT_POST, 'band_text');
-    $b_img = filter_input(INPUT_POST, 'fileToUpload');
+    $b_img = basename($_FILES["fileToUpload"]["name"]);
+    $b_img = rand(1,9999999999999999999999) . '.' . end(explode(".",$_FILES["fileToUpload"]["name"]));
     $c_name = filter_input(INPUT_POST, 'contact_name');
     $c_phone = filter_input(INPUT_POST, 'contact_phone');
     $c_email = filter_input(INPUT_POST, 'contact_email');
     
-    echo $label . $genre . $b_name . $b_text . $b_img . $c_name . $c_phone . $c_email; 
-   
+    //upload img to folder
+    $target_dir = "../img/artist/";
+    $target_file = $target_dir . $b_img;
+    $uploadOk = 1;
+    $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]); 
+    //img validation
+    //if empty
+    if(empty(basename($_FILES["fileToUpload"]["name"]))){
+        echo '<p style="color:red;">Must not be empty</p>';
+    }
+    //Check if image file is a actual image or fake image  
+    if($check == false) {
+        //File is an image;
+        echo '<p style="color:red;">File is not an image.</p>';
+        $uploadOk = 0;
+    }
+    // Check if file already exists
+    if (file_exists($target_file)) {
+        $img_error2 = "File already exists.";
+        $uploadOk = 0;
+    }
+    // Check file size
+    if ($_FILES["fileToUpload"]["size"] > 5000000) {
+        echo "Your file is too large. max 0,5 GB";
+        $uploadOk = 0;
+    }
+    // Allow certain file formats
+    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" ) {
+        echo "Only JPG, JPEG, PNG files are allowed.";
+        $uploadOk = 0;
+    }
+    // Check if $uploadOk is set to 0 by an error
+    if ($uploadOk == 0) {
+        echo "Your file was not uploaded.";
+    // if everything is ok, try to upload file
+    }else{
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+            echo "Image ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        }else{
+            echo "There was an error uploading your file.";
+        }
+    }
+    
+    //validate the rest
     if(empty($_POST["label"])){
         $error = '<p style="color:red;">Must not be empty</p>';
     }
@@ -22,9 +67,6 @@ if (isset($_POST["artist"])){
     }
     else if(empty($_POST["band_text"])){
         $error4 = '<p style="color:red;">Must not be empty</p>';
-    }
-    else if(empty($_POST["fileToUpload"])){
-        $error5 = '<p style="color:red;">Must not be empty</p>';
     }
     else if(empty($_POST["contact_name"])){
         $error6 = '<p style="color:red;">Must not be empty</p>';
@@ -74,7 +116,7 @@ include 'nav.php';
             <?php include 'search.php'; ?>
             <h1 class="page-header">Add new artist</h1>
             <h3 style="color:green;"><?= $b_name . $created ?></h3>
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form action="<?php  $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                 <?php echo $error; ?>
                 <select name="label" class="form-control">
                 <option value="">Label</option>
@@ -117,9 +159,9 @@ include 'nav.php';
                 <div class="form-group">
                     <textarea class="form-control" name="band_text" placeholder="Description"></textarea>
                 </div>
+                <?php $img_error ?>
                 <div class="form-group">
                     <img class="input-thumb" id="thumbnail">
-                    <?php echo $error5; ?>
                     <input type="file" name="fileToUpload" id="fileToUpload" onchange="readURL(this);">
                 </div>
                 <br>

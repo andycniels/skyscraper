@@ -2,7 +2,7 @@
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
 <!-- Genre liste til music_genre fandt vi på; http://www.vfront.org/albums.sql  -->
 <!-- img thump til img upload; http://jsbin.com/hajoqexoku/edit?html,js,output  -->
-<!-- input file style: http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/  -->
+
 
 
 <?php
