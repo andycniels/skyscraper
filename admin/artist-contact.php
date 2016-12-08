@@ -15,18 +15,26 @@ include 'nav.php';
                     <th>Contact phone</th>
                     <th>Contact email</th>
                 </tr>
-                <tr>
-                    <td>Possumus exercitation</td>
-                    <td>
-                        <p>John Madsen</p>
-                    </td>
-                    <td>
-                        <p>38492938</p>
-                    </td>
-                    <td>
-                        <p>email@hej.com</p>
-                    </td>
-                </tr>
+                    <?php
+                    require_once '../dbcon.php';
+                    $stmt = $link->prepare("SELECT contact_name, phone, email FROM artist_contact");
+                    $stmt->execute();
+                    $stmt->bind_result($cn, $p, $e);
+                
+                        while($stmt->fetch()) {
+                        ?>
+                    <tr>
+                    <td>name</td>
+                    <td><?= $cn ?></td>
+                        <td><a href="tel:<?= $p ?> "><?= $p ?></a></td>
+                    <td><?= $e ?></td>
+                    </tr>
+                    <?php
+                    }
+                
+                
+                    
+                    ?>
             </table>
         </div>
     </div>
