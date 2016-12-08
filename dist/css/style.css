@@ -8303,6 +8303,15 @@ h4 {
     font-size: 4em;
   }
 }
+@media only screen and (min-width: 480px) {
+  .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+  .hidden-xs {
+    display: block !important;
+  }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   h1 {
