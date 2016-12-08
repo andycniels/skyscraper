@@ -17,22 +17,34 @@ include 'nav.php';
                 </tr>
                     <?php
                     require_once '../dbcon.php';
-                    $stmt = $link->prepare("SELECT contact_name, phone, email FROM artist_contact");
+                    $stmt = $link->prepare("SELECT a.artist_contact_id, 
+                                                   a.contact_name, 
+                                                   a.phone, 
+                                                   a.email, 
+                                                   m.band_name,
+                                                   m.fk_artistcontact_id
+                                                   
+                                                   FROM artist_contact a, music m
+                                                   WHERE m.fk_artistcontact_id = a.artist_contact_id
+                                                   AND a.artist_contact_id = m.fk_artistcontact_id 
+                                                   ");
                     $stmt->execute();
-                    $stmt->bind_result($cn, $p, $e);
+                    $stmt->bind_result($acid, $cn, $p, $e, $bn, $fkid);
                 
                         while($stmt->fetch()) {
                         ?>
                     <tr>
-                    <td>name</td>
-                    <td><?= $cn ?></td>
-                        <td><a href="tel:<?= $p ?> "><?= $p ?></a></td>
-                    <td><?= $e ?></td>
+                        <td><?= $bn ?></td>
+                        <td><?= $cn ?></td>
+                        <td><a href="tel:<?= $p ?>"><?= $p ?></a></td>
+                        <td><a href="mailto:<?= $e ?>" target="_top"><?= $e ?></a></td>
                     </tr>
                     <?php
                     }
+                    
                 
                 
+                       
                     
                     ?>
             </table>
