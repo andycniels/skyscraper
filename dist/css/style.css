@@ -8105,13 +8105,13 @@ h4 {
   color: #50a4b9 !important;
 }
 /*.circle-down {
-        width: 50px;
-        height: 50px;
-        display: block;
-        margin: 20px auto;
-        border: solid 1px @brand-white;
-        border-radius: 100%;
-    }*/
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    border: solid 1px @brand-white;
+    border-radius: 100%;
+}*/
 .fa-chevron-down {
   color: #f3f3f3;
   position: relative;
@@ -8232,19 +8232,26 @@ h4 {
   padding-top: 20px;
 }
 .our-work {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background: url("../../img/studio.jpeg") no-repeat center scroll;
+  background: url("../../img/studio-blk-wht.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding: 0;
-  margin: 0;
+  padding: 50px;
+  text-align: center;
 }
 .our-work h2 {
   color: #f3f3f3;
+}
+.our-work img {
+  width: 70%;
+  margin-top: 50px;
+}
+.our-work p {
+  text-transform: uppercase;
+  color: #f3f3f3;
+  font-size: 1.5em;
+  text-align: center;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
