@@ -8244,8 +8244,8 @@ h4 {
   color: #f3f3f3;
 }
 .our-work img {
-  width: 50%;
-  margin-top: 20px;
+  width: 30%;
+  margin-top: 50px;
 }
 .our-work p {
   text-transform: uppercase;
@@ -8303,13 +8303,27 @@ h4 {
     font-size: 4em;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 640px) {
   .col-sm-6 {
     width: 50%;
     float: left;
   }
   .hidden-xs {
     display: block !important;
+  }
+  .nav-tabs li {
+    float: none;
+  }
+  .col-sm-3 {
+    width: 25%;
+    float: left;
+  }
+  .our-work img {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  .our-work p {
+    font-size: 1.2em;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -8365,6 +8379,9 @@ h4 {
   }
   .nav-tabs {
     border: none;
+  }
+  .nav-tabs li {
+    float: left;
   }
   .nav-tabs li a {
     text-transform: uppercase;
