@@ -8244,14 +8244,24 @@ h4 {
   color: #f3f3f3;
 }
 .our-work img {
-  width: 70%;
-  margin-top: 50px;
+  width: 50%;
+  margin-top: 20px;
 }
 .our-work p {
   text-transform: uppercase;
   color: #f3f3f3;
   font-size: 1.5em;
   text-align: center;
+}
+.our-partners {
+  background-color: #50a4b9;
+}
+.our-partners h2 {
+  padding: 50px;
+}
+.our-partners img {
+  width: 200px;
+  margin: 20px;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -8309,7 +8319,7 @@ h4 {
     padding-right: 7%;
   }
   .box-top-right .about-quote h4 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 100;
     color: #8b8b8b;
     margin-top: -2%;
@@ -8318,7 +8328,7 @@ h4 {
     font-family: "museo-sans", sans-serif;
     font-weight: 100;
     color: #303030;
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .headline-underline {
     border-bottom: solid 4px #50a4b9;
@@ -8352,8 +8362,15 @@ h4 {
     padding-top: 20px;
   }
   .box-bottom-right .about-quote h4 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 100;
+  }
+  .our-work img {
+    margin: 50px;
+  }
+  .our-partners img {
+    margin: 0px;
+    margin-bottom: 30px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
