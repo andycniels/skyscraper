@@ -1,6 +1,7 @@
 @import "bootstrap.less";
 
 //Skyscraper custom style (Niels, Andreas, Casper og Anders)...
+
 .hero-header {
     position: relative;
     width: 100%;
@@ -10,216 +11,358 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+    }
 
-body {
-    font-family: @font-primary;
-}
+    body {
+        font-family: @font-primary;
+    }
 
-.hero-container {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    transform: translateY(100%);
-    text-align: center;
-}
+    .hero-container {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        transform: translateY(100%);
+        text-align: center;
+    }
 
-.logo {
-}
+    .logo {
+    }
 
-.logo img {
-    width: 10%;
-}
+    .logo img {
+        width: 10%;
+    }
 
 h1 {
     font-family: @font-secondary;
-    font-size: 6em;
-    color: @brand-primary;
     font-weight: 900;
-    padding: 0;
-    margin: 0;
-    line-height: 60px;
-}
-
-h2 {
-    font-family: @font-primary;
-    color: @brand-white;
-    font-size: 3em;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-}
-
-h4 {
-    font-family: @font-primary;
-}
-
-.text-left {
-    margin-left: -27%;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.high-text {
     color: @brand-primary;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
 }
 
-.hero-btn {color: @brand-white; border-color: @brand-white; border-width: 2px; margin-top: 20px; font-family: @font-primary; font-weight: 900; position: relative;
-    top: 70px;
-    &:hover {
-        background-color: @brand-white;
+    h2 {
+        font-family: @font-primary;
+        color: @brand-white;
+        font-size: 2em;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+    }
+
+    h4 {
+        font-family: @font-primary;
+    }
+
+    .text-left {
+        margin-left: -35%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .high-text {
         color: @brand-primary;
     }
-}
 
-/*.circle-down {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 20px auto;
-    border: solid 1px @brand-white;
-    border-radius: 100%;
-}*/
-
-.fa-chevron-down {
-    color: @brand-white;
-    position: relative;
-    top: 70px;
-    font-size: 2em;
-}
-
-.box-top-left {
-    height: 550px;
-    overflow: hidden;
-}
-
-.box-top-left img {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.box-top-right {
-    height: 550px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.box-top-right .about-quote {
-    height: 100%;
-    position: absolute;
-    text-transform: uppercase;
-    background-color: @brand-white;
-    padding-left: 10%;
-    padding-top: 7%;
-    padding-right: 7%;
-}
-
-.box-top-right .about-quote h4 {
-    font-size: 3em;
-    font-weight: 100;
-}
-
-.box-headline {
-    font-family: @font-primary;
-    font-weight: 100;
-    color: @brand-grey;
-    font-size: 3em;
-}
-
-.box-bottom-right {
-    height: 550px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: @brand-primary;
-}
-
-.box-bottom-right .about-quote {
-    padding-left: 10%;
-    padding-top: 10%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-    color: @brand-white;
-    
-}
-
-.box-bottom-right .about-quote h4 {
-    font-size: 3em;
-    font-weight: 100;
-}
-
-.box-bottom-left {
-    height: 550px;
-    overflow: hidden;
-    padding: 5%;
-    background-color: @brand-white;
-}
-
-.nav-tabs {
-    border: none;
-}
-
-.nav-tabs li a {
-    text-transform: uppercase;
-    font-family: @font-secondary;
-    &:hover {
-        background-color: @brand-white;
-        border-bottom: solid 2px @brand-primary;
-    }
-}
-
-.nav-tabs li.active a{
-    border: none; border-bottom: solid 2px @brand-primary; background-color: @brand-white;
+    .hero-btn {color: @brand-white !important; border-color: @brand-white; border-width: 2px; margin-top: 20px; font-family: @font-primary; font-weight: 900; position: relative;
+        top: 70px;
         &:hover {
-        border-top: none;
-        border-right: none;
-        border-left: none;
+            background-color: @brand-white;
+            color: @brand-primary !important;
+        }
+    }
+
+    /*.circle-down {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 20px auto;
+        border: solid 1px @brand-white;
+        border-radius: 100%;
+    }*/
+
+    .fa-chevron-down {
+        color: @brand-white;
+        position: relative;
+        top: 70px;
+        font-size: 2em;
+    }
+
+    .box-top-left {
+        height: 550px;
+        overflow: hidden;
+    }
+
+    .box-top-left img {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-top-right {
+        height: 550px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-top-right .about-quote {
+        height: 100%;
+        position: absolute;
+        text-transform: uppercase;
         background-color: @brand-white;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-right: 7%;
+    }
+
+    .box-top-right .about-quote h4 {
+        font-size: 2.5em;
+        font-weight: 100;
+        color: @brand-light-grey;
+        margin-top: -2%;
+    }
+
+    .box-headline {
+        font-family: @font-primary;
+        font-weight: 100;
+        color: @brand-grey;
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
+    
+    .headline-underline {
+        border-bottom: solid 4px @brand-primary;
+        width: 20%;
+        margin-top: 5px;
+    }
+
+    .box-bottom-right {
+        height: 550px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: @brand-primary;
+    }
+
+    .box-bottom-right .about-quote {
+        padding-left: 10%;
+        padding-top: 3%;
+        padding-right: 10%;
+        padding-bottom: 2%;
+        color: @brand-white;
+
+    }
+
+    .box-bottom-right .about-quote h4 {
+        font-size: 2.5em;
+        font-weight: 100;
+    }
+
+    .quote-mark {
+        display: block;
+        position: relative;
+        top: 5%;
+        left: 5%;
+    }
+
+    .quote-mark img {
+        width: 8%;
+    }
+
+    .signature {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .jakob-ceo img{
+        width: 80%;
+        display: block;
+        margin: 2% auto;
+    }
+    
+    .box-bottom-left {
+        height: 550px;
+        overflow: hidden;
+        padding: 5%;
+        background-color: @brand-white;
+    }
+
+    .nav-tabs {
+        border: none;
+    }
+
+    .nav-tabs li a {
+        text-transform: uppercase;
+        font-family: @font-secondary;
+        &:hover {
+            background-color: @brand-white;
             border-bottom: solid 2px @brand-primary;
         }
-}
+    }
 
+    .nav-tabs li.active a{
+        border: none !important; border-bottom: solid 4px @brand-primary !important; background-color: @brand-white !important;
+            &:hover {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            background-color: @brand-white;
+                border-bottom: solid 2px @brand-primary;
+            }
+    }
+    
+    .tab-pane p {
+        padding-top: 20px;
+    }
 
-
-.quote-mark {
-    display: block;
+.our-work {
     position: relative;
-    top: 12%;
-    left: 10%;
+    width: 100%;
+    height: 500px;
+    background: url("../../img/studio.jpeg") no-repeat center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
-.quote-mark img {
-    width: 8%;
+.our-work h2 {
+    color: @brand-white;
 }
 
-.signature {
-    width: 30%;
-    display: block;
-    margin: 0 auto;
-}
-
-
-.jakob-ceo img{
-    width: 40%;
-    display: block;
-    margin: 2% auto;
-}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+@media only screen and (min-width : 320px) {
+    .signature {
+        width: 200px;
+        margin-bottom: 20px;
+    }
     
+    .jakob-ceo img {
+        width: 150px;
+    }
+    
+    .nav-tabs li a{
+        margin: 6px;
+        padding: 0;
+        font-size: 9pt;
+    }
+    
+}
+
+@media only screen and (min-width: 425px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: @screen-sm-min) {
+    h1 {
+        font-family: @font-secondary;
+        font-size: 6em;
+        color: @brand-primary;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+        line-height: 60px;
+    }
+    
+    h2 {
+        font-family: @font-primary;
+        color: @brand-white;
+        font-size: 3em;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box-top-right {
+        height: 550px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-top-right .about-quote {
+        height: 100%;
+        position: absolute;
+        text-transform: uppercase;
+        background-color: @brand-white;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-right: 7%;
+    }
+
+    .box-top-right .about-quote h4 {
+        font-size: 3em;
+        font-weight: 100;
+        color: @brand-light-grey;
+        margin-top: -2%;
+    }
+
+    .box-headline {
+        font-family: @font-primary;
+        font-weight: 100;
+        color: @brand-grey;
+        font-size: 3em;
+    }
+    
+    .headline-underline {
+        border-bottom: solid 4px @brand-primary;
+        width: 20%;
+        margin-top: 5px;
+    }
+    
+    .nav-tabs {
+        border: none;
+    }
+
+    .nav-tabs li a {
+        text-transform: uppercase;
+        font-family: @font-secondary;
+        &:hover {
+            background-color: @brand-white;
+            border-bottom: solid 2px @brand-primary;
+        }
+    }
+
+    .nav-tabs li.active a{
+        border: none !important; border-bottom: solid 4px @brand-primary !important; background-color: @brand-white !important;
+            &:hover {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            background-color: @brand-white;
+                border-bottom: solid 2px @brand-primary;
+            }
+    }
+    
+    .tab-pane p {
+        padding-top: 20px;
+    }
+    
+    .box-bottom-right .about-quote h4 {
+        font-size: 3em;
+        font-weight: 100;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-
+    .text-left {
+        margin-left: -30%;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
