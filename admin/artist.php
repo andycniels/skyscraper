@@ -38,6 +38,7 @@ include 'nav.php';
                                                FROM music m, labels l, music_genre g 
                                                WHERE m.fk_musicgenre_id = g.genre_id
                                                AND m.fk_label_id = l.label_id
+                                               AND fk_cat_id = 4
                                         ");
                 $stmt->execute();
                 $stmt->bind_result($mid, $bn, $img, $text, $fkmid, $fklid, $fkacid, $fkcid,
@@ -55,7 +56,7 @@ include 'nav.php';
                     <td><a href="edit?mid=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit?img=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit?acid=<?= $fkacid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                    <td><a href="delete?mid=<?= $mid ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                    <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- and the contact info?');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                 </tr>
                 <?php
                 }

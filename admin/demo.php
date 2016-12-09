@@ -1,6 +1,8 @@
 <?php
 include 'header.php';
 include 'nav.php';
+$y = 'UCDlQwv99CovKafGvxyaiNDA';
+$s = 'bigbabydram';
 ?>
 <!-- page content -->
 <div class="right_col main_place" role="main">
@@ -12,7 +14,7 @@ include 'nav.php';
                     <tr>
                         <th>Band name</th>
                         <th>Description</th>
-                        <th>Soundcloud</th>
+                        <th>Link</th>
                         <th>Contact person</th>
                         <th>Contact phone</th>
                         <th>Contact email</th>
@@ -34,7 +36,8 @@ include 'nav.php';
                             culpa singulis. Eu quid quis ex incididunt.
                         </td>
                         <td>
-                            <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fbigbabydram&color=black_white&size=64" style="width: 64px; height: 64px;"></iframe>
+                            <a href="https://www.youtube.com/channel/<?= $y ?>" target="_blank"><img src="../icons/yticon.png"></a>
+                            <a href="https://soundcloud.com/<?= $s ?>" target="_blank"><img src="../icons/scicon.png"></a>
                         </td>
                         <td>
                             <p>John Madsen</p>

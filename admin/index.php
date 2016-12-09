@@ -64,7 +64,7 @@ include 'nav.php';
                         <td><a href="edit?mid=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                         <td><a href="edit?img=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                         <td><a href="edit?acid=<?= $fkacid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                        <td><a href="delete?mid=<?= $mid ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                        <td><a href="delete?mid=<?= $mid ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- and the contact info?');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                     </tr>
                 <?php
                 }

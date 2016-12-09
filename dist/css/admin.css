@@ -12561,8 +12561,3 @@ textarea {
     margin: auto;
   }
 }
-@media print {
-  body {
-    background-color: aqua;
-  }
-}
