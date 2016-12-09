@@ -2188,7 +2188,6 @@ select[multiple].input-lg {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -5054,9 +5053,7 @@ button.close {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -5851,7 +5848,6 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
   filter: none;
 }
 .fa-stack {
@@ -8061,13 +8057,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-<<<<<<< HEAD
-  -webkit-transform: translateY(30%);
-  -ms-transform: translateY(30%);
-  transform: translateY(30%);
-=======
   transform: translateY(100%);
->>>>>>> origin/master
   text-align: center;
 }
 .logo img {
@@ -8338,9 +8328,6 @@ h4 {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-<<<<<<< HEAD
-  background-color: red;
-=======
   h1 {
     font-family: "museo-sans-display", sans-serif;
     font-size: 6em;
@@ -8430,7 +8417,6 @@ h4 {
     margin: 0px;
     margin-bottom: 30px;
   }
->>>>>>> origin/master
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
