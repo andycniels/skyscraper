@@ -92,7 +92,7 @@ $stmt = $link->prepare("SELECT box_headline_one,
             <div class="tab-content">
                 <!-- Tab 1-->
                 <div role="tabpanel" class="tab-pane active" id="home">
-                    <form action="<?php REQUEST_FILENAME ?>" method="POST">
+                    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" name="bh" value="<?php echo $bh1 ?>" placeholder="Headline">
                         </div>
@@ -103,7 +103,7 @@ $stmt = $link->prepare("SELECT box_headline_one,
                     </form>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="profile">
-                    <form action="<?php REQUEST_FILENAME ?>" method="POST">
+                    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" name="bh" value="<?php echo $bh2 ?>" placeholder="Headline">
                         </div>
@@ -114,7 +114,7 @@ $stmt = $link->prepare("SELECT box_headline_one,
                     </form>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="messages">
-                    <form action="<?php REQUEST_FILENAME ?>" method="POST">
+                    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" name="bh" value="<?php echo $bh3 ?>" placeholder="Headline">
                         </div>

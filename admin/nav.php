@@ -67,7 +67,15 @@
 								<li role="presentation">
 									<a href="demo" class="dropdown-toggle info-number">
 									<i class="fa fa-music fa-2x" aria-hidden="true"></i>
-									<span class="badge bg-green">1</span>
+                                    <?php
+                                    require_once '../dbcon.php';
+                                    $stmt = $link->prepare("SELECT COUNT(music_id) FROM music WHERE fk_cat_id = 3;");
+                                    $stmt->execute();
+                                    $stmt->bind_result($mid);
+                                        while($stmt->fetch()) {    
+                                        }
+                                    ?>
+									<span class="badge bg-green"><?= $mid ?></span>
 									</a>
 								</li>
                                 <li role="presentation">

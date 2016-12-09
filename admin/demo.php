@@ -1,8 +1,6 @@
 <?php
 include 'header.php';
 include 'nav.php';
-$y = 'UCDlQwv99CovKafGvxyaiNDA';
-$s = 'bigbabydram';
 ?>
 <!-- page content -->
 <div class="right_col main_place" role="main">
@@ -14,6 +12,7 @@ $s = 'bigbabydram';
                     <tr>
                         <th>Band name</th>
                         <th>Description</th>
+                        <th>Genre</th>
                         <th>Link</th>
                         <th>Contact person</th>
                         <th>Contact phone</th>
@@ -21,36 +20,68 @@ $s = 'bigbabydram';
                         <th>Add to artists</th>
                         <th>Delete</th>
                     </tr>
-                    <tr>
-                        <td>Possumus exercitation</td>
-                        <td>Eu nam duis possumus, ad fore litteris distinguantur te officia si voluptate ex 
-                            minim voluptatibus deserunt velit ullamco. Eu quo noster legam magna ubi iis iis 
-                            enim cillum noster, nam fugiat sempiternum, doctrina multos esse eu quem ea 
-                            expetendis malis appellat excepteur iis singulis noster si commodo voluptatibus, 
-                            e ab exercitation an incurreret do offendit. Magna ea vidisse a quorum, id sint 
-                            occaecat reprehenderit, singulis de dolore officia, quorum mentitum qui 
-                            sempiternum. Incididunt non sint hic veniam nescius de tractavissent. Litteris 
-                            eram doctrina mentitum, ingeniis exquisitaque id vidisse, laborum consectetur o 
-                            mandaremus de quae pariatur id deserunt. Litteris aliqua elit non culpa, minim 
-                            consequat sempiternum o cernantur dolor amet consequat aute, est dolore aute 
-                            culpa singulis. Eu quid quis ex incididunt.
-                        </td>
-                        <td>
-                            <a href="https://www.youtube.com/channel/<?= $y ?>" target="_blank"><img src="../icons/yticon.png"></a>
-                            <a href="https://soundcloud.com/<?= $s ?>" target="_blank"><img src="../icons/scicon.png"></a>
-                        </td>
-                        <td>
-                            <p>John Madsen</p>
-                        </td>
-                        <td>
-                            <p>38492938</p>
-                        </td>
-                        <td>
-                            <p>email@hej.com</p>
-                        </td>
-                        <td><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></td>
-                        <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-                    </tr>
+                    <?php
+                require_once '../dbcon.php';
+                $stmt = $link->prepare("SELECT m.music_id, 
+                                               m.band_name, 
+                                               m.img, 
+                                               m.text, 
+                                               m.fk_soundcloud_id,
+                                               m.fk_musicgenre_id,
+                                               m.fk_artistcontact_id, 
+                                               m.fk_cat_id,
+                                               
+                                               g.genre_id,
+                                               g.genre,
+                                               
+                                               a.artist_contact_id, 
+                                               a.contact_name, 
+                                               a.phone, 
+                                               a.email,
+                                               
+                                               l.soundcloud_id,
+                                               l.s_url,
+                                               l.y_url
+                                               
+                                               FROM music m, music_genre g, artist_contact a, link l
+                                               WHERE m.fk_musicgenre_id = g.genre_id
+                                               AND m.fk_artistcontact_id = a.artist_contact_id
+                                               AND m.fk_soundcloud_id = l.soundcloud_id
+                                               AND fk_cat_id = 3
+                                        ");
+                $stmt->execute();
+                $stmt->bind_result($mid, $bn, $img, $text, $fklinkid, $fkmid, $fkacid, $fkcid,
+                                   $gid, $genre,
+                                   $artistcid, $acn, $acp, $ace,
+                                   $linkid, $s, $y
+                                  );
+                
+                while($stmt->fetch()) {
+                ?>
+                <tr>
+                    <td><?= $bn ?></td>
+                    <td><?= $text ?></td>
+                    <td><?= $genre ?></td>
+                    <td>
+                    <?php
+                    if (!empty($y)) {
+                        echo "<a href='https://www.youtube.com/channel/$y' target='_blank'><img src='../icons/yticon.png'></a>";
+                    }
+                    if (!empty($s)) {
+                        echo "<a href='https://soundcloud.com/$s' target='_blank'><img src='../icons/scicon.png'></a>";
+                    }
+                    ?>
+                    </td>
+                    <td><?= $acn ?></td>
+                    <td><?= $acp ?></td>
+                    <td><?= $ace ?></td>
+                    <td><a href="edit?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to add -<?= $bn ?>- to your artist list? this will display this artist on the front page');" ><i class="fa fa-heart-o" aria-hidden="true"></i></a></td>
+                    
+                    <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>&linkid=<?= $linkid ?>&catid=<?= $fkcid ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- ? This will delete; the artist, the contact and music link');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                </tr>
+                <?php
+                }
+                ?>
                 </table>
         </div>
     </div>

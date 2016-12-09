@@ -70,7 +70,7 @@ include 'nav.php';
                 }
                 ?>
                 </table>
-                <h3>Artist contact</h3>
+                <h3>Artist contact order by artist</h3>
                 <table class="table table-striped table-hover">
                 <tr>
                     <th>Band name</th>
@@ -106,10 +106,43 @@ include 'nav.php';
                 }
                 ?>
                 </table>
+                <h3>Artist contact order by contact name</h3>
+                <table class="table table-striped table-hover">
+                <tr>
+                    <th>Band name</th>
+                    <th>Contact person</th>
+                    <th>Contact phone</th>
+                    <th>Contact email</th>
+                </tr>
+                <?php
+                require_once '../dbcon.php';
+                $stmt = $link->prepare("SELECT a.artist_contact_id, 
+                                               a.contact_name, 
+                                               a.phone, 
+                                               a.email, 
+                                               m.band_name,
+                                               m.fk_artistcontact_id
+                                                   
+                                               FROM artist_contact a, music m
+                                               WHERE m.fk_artistcontact_id = a.artist_contact_id
+                                               AND a.contact_name COLLATE UTF8_GENERAL_CI LIKE '%$search%'
+                                               ");
+                $stmt->execute();
+                $stmt->bind_result($acid, $cn, $p, $e, $bn, $fkid);
+                
+                while($stmt->fetch()) {
+                ?>
+                <tr>
+                    <td><?= $bn ?></td>
+                    <td><?= $cn ?></td>
+                    <td><a href="tel:<?= $p ?>"><?= $p ?></a></td>
+                    <td><a href="mailto:<?= $e ?>" target="_top"><?= $e ?></a></td>
+                </tr>
+                <?php
+                }
+                ?>
+                </table>
                 <?php    
-                    
-                    
-                    
                 }else{
                     echo 'FORSIDEN';
                 }

@@ -35,7 +35,7 @@ $stmt = $link->prepare("SELECT quote FROM `about`");
             <p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
 								quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
             </p>
-            <form action="<?php REQUEST_FILENAME ?>" method="POST">
+            <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
             <div class="form-group">
              <?php echo $error; ?>
 				<textarea class="form-control" name="quote" placeholder="Text">

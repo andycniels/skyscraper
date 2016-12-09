@@ -47,7 +47,7 @@ include 'nav.php';
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
             <h1 class="page-header">IMG</h1>    
-            <form action="#" method="post" enctype="multipart/form-data">
+            <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
             Select image to upload:
             <input type="file" name="fileToUpload" id="fileToUpload">
             <input type="submit" value="Upload Image" name="submit">
