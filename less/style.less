@@ -1,6 +1,7 @@
 @import "bootstrap.less";
 
 //Skyscraper custom style (Niels, Andreas, Casper og Anders)...
+
 .hero-header {
     position: relative;
     width: 100%;
@@ -10,7 +11,7 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+    }
 
 body {
     font-family: @font-primary;
@@ -20,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    transform: translateY(30%);
+    transform: translateY(100%);
     text-align: center;
 }
 
@@ -33,19 +34,18 @@ body {
 
 h1 {
     font-family: @font-secondary;
-    font-size: 6em;
-    color: @brand-primary;
     font-weight: 900;
-    padding: 0;
+    color: @brand-primary;
+    font-size: 3em;
     margin: 0;
-    line-height: 60px;
+    padding: 0;
 }
 
 h2 {
-    font-family: @font-secondary;
+    font-family: @font-primary;
     color: @brand-white;
-    font-size: 3em;
-    font-weight: 800;
+    font-size: 2em;
+    font-weight: 100;
     margin: 0;
     padding: 0;
 }
@@ -55,7 +55,7 @@ h4 {
 }
 
 .text-left {
-    margin-left: -27%;
+    margin-left: -35%;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -64,11 +64,11 @@ h4 {
     color: @brand-primary;
 }
 
-.hero-btn {color: @brand-white; border-color: @brand-white; border-width: 2px; margin-top: 20px; font-family: @font-primary; font-weight: 900; position: relative;
+.hero-btn {color: @brand-white !important; border-color: @brand-white; border-width: 2px; margin-top: 20px; font-family: @font-primary; font-weight: 900; position: relative;
     top: 70px;
     &:hover {
         background-color: @brand-white;
-        color: @brand-primary;
+        color: @brand-primary !important;
     }
 }
 
@@ -114,20 +114,29 @@ h4 {
     text-transform: uppercase;
     background-color: @brand-white;
     padding-left: 10%;
-    padding-top: 7%;
+    padding-top: 5%;
     padding-right: 7%;
 }
 
 .box-top-right .about-quote h4 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 100;
+    color: @brand-light-grey;
+    margin-top: -2%;
 }
 
 .box-headline {
     font-family: @font-primary;
     font-weight: 100;
     color: @brand-grey;
-    font-size: 3em;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.headline-underline {
+    border-bottom: solid 4px @brand-primary;
+    width: 20%;
+    margin-top: 5px;
 }
 
 .box-bottom-right {
@@ -140,16 +149,40 @@ h4 {
 
 .box-bottom-right .about-quote {
     padding-left: 10%;
-    padding-top: 10%;
+    padding-top: 3%;
     padding-right: 10%;
     padding-bottom: 2%;
     color: @brand-white;
-    
+
 }
 
 .box-bottom-right .about-quote h4 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 100;
+}
+
+.quote-mark {
+    display: block;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.quote-mark img {
+    width: 8%;
+}
+
+.signature {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.jakob-ceo img{
+    width: 80%;
+    display: block;
+    margin: 2% auto;
 }
 
 .box-bottom-left {
@@ -173,7 +206,7 @@ h4 {
 }
 
 .nav-tabs li.active a{
-    border: none; border-bottom: solid 2px @brand-primary; background-color: @brand-white;
+    border: none !important; border-bottom: solid 4px @brand-primary !important; background-color: @brand-white !important;
         &:hover {
         border-top: none;
         border-right: none;
@@ -183,43 +216,245 @@ h4 {
         }
 }
 
-
-
-.quote-mark {
-    display: block;
-    position: relative;
-    top: 12%;
-    left: 10%;
+.tab-pane p {
+    padding-top: 20px;
 }
 
-.quote-mark img {
-    width: 8%;
+.our-work {
+    background: url("../../img/studio-blk-wht.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 50px;
+    text-align: center;
 }
 
-.signature {
+.our-work h2 {
+    color: @brand-white;    
+}
+
+.our-work img {
     width: 30%;
-    display: block;
-    margin: 0 auto;
+    margin-top: 50px;
 }
 
+.our-work p {
+    text-transform: uppercase;
+    color: @brand-white;
+    font-size: 1.5em;
+    text-align: center;
+}
 
-.jakob-ceo img{
-    width: 40%;
-    display: block;
-    margin: 2% auto;
+.our-partners {
+    background-color: @brand-primary;
+}
+
+.our-partners h2 {
+    padding: 50px;
+}
+
+.our-partners img{
+    width: 200px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info {
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    margin-top: 10px;
+}
+
+.contact-info .box-headline {
+    font-family: @font-secondary;
+    color: @brand-grey;
+    text-transform: uppercase;
+}
+
+.contact-info h3{
+    margin: 0;
 }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { background-color: red;
+@media only screen and (min-width : 320px) {
+    .signature {
+        width: 200px;
+        margin-bottom: 20px;
+    }
     
+    .jakob-ceo img {
+        width: 150px;
+    }
+    
+    .nav-tabs li a{
+        margin: 6px;
+        padding: 0;
+        font-size: 9pt;
+    }
+    
+}
+
+@media only screen and (min-width: 425px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    .col-sm-6 {
+        width: 50%;
+        float: left;
+    }
+    
+    .hidden-xs {
+        display: block !important;
+    }
+    
+    
+    .nav-tabs li {
+        float: none;
+    }
+    
+    .col-sm-3 {
+        width: 25%;
+        float: left;
+    }
+    
+    .our-work img {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    
+    .our-work p {
+        font-size: 1.2em;
+    }
+    
+}
+
+/* Small devices (tablets, 768px and up) */
+<<<<<<< HEAD
+@media (min-width: @screen-sm-min) { background-color: red;
+=======
+
+@media (min-width: @screen-sm-min) {
+    h1 {
+        font-family: @font-secondary;
+        font-size: 6em;
+        color: @brand-primary;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+        line-height: 60px;
+    }
+    
+    h2 {
+        font-family: @font-primary;
+        color: @brand-white;
+        font-size: 3em;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box-top-right {
+        height: 550px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-top-right .about-quote {
+        height: 100%;
+        position: absolute;
+        text-transform: uppercase;
+        background-color: @brand-white;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-right: 7%;
+    }
+
+    .box-top-right .about-quote h4 {
+        font-size: 2.5em;
+        font-weight: 100;
+        color: @brand-light-grey;
+        margin-top: -2%;
+    }
+
+    .box-headline {
+        font-family: @font-primary;
+        font-weight: 100;
+        color: @brand-grey;
+        font-size: 2.5em;
+    }
+    
+    .headline-underline {
+        border-bottom: solid 4px @brand-primary;
+        width: 20%;
+        margin-top: 5px;
+    }
+    
+    .nav-tabs {
+        border: none;
+    }
+>>>>>>> origin/master
+    
+    .nav-tabs li {
+        float: left;
+    }
+    
+    .nav-tabs li a {
+        text-transform: uppercase;
+        font-family: @font-secondary;
+        &:hover {
+            background-color: @brand-white;
+            border-bottom: solid 2px @brand-primary;
+        }
+    }
+
+    .nav-tabs li.active a{
+        border: none !important; border-bottom: solid 4px @brand-primary !important; background-color: @brand-white !important;
+            &:hover {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            background-color: @brand-white;
+                border-bottom: solid 2px @brand-primary;
+            }
+    }
+    
+    .tab-pane p {
+        padding-top: 20px;
+    }
+    
+    .box-bottom-right .about-quote h4 {
+        font-size: 2.5em;
+        font-weight: 100;
+    }
+    
+    .our-work img {
+        margin: 50px;
+    }
+    
+    .our-partners img {
+        margin: 0px;
+        margin-bottom: 30px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-
+    .text-left {
+        margin-left: -30%;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
