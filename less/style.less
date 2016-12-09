@@ -213,7 +213,7 @@ h4 {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-sm-min) { background-color: red;
     
 }
 
@@ -229,4 +229,17 @@ h4 {
 
 @media print {
 
+}
+
+
+.artist {margin: 0; padding: 0; position: relative;
+    img{width: 100%; height: auto; display: block;}
+}
+
+.overlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
 }
