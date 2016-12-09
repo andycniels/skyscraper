@@ -34,9 +34,7 @@ $stmt = $link->prepare("SELECT headline, text FROM `about`");
         <div class="col-md-8 col-lg-push-2">
             <?php include 'search.php'; ?>
             <h1 class="page-header">Short description</h1>
-            <p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
-                quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
-            </p>
+            <p>Edit the headline and shot description in the about section.</p>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div class="form-group">
                     <?php echo $error; ?>
@@ -48,6 +46,9 @@ $stmt = $link->prepare("SELECT headline, text FROM `about`");
                 </div>
                 <input class="btn btn-default" name="about" type="submit" value="Update">
             </form>
+            <br>
+            <p>The red border box shows where on the site you are editing</p>
+            <img src="aboutimg/introbox.jpg" width="400px" class="img-responsive">
         </div>
     </div>
 </div>

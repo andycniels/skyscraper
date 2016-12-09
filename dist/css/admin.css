@@ -12550,6 +12550,26 @@ textarea {
 .input-thumb {
   margin: 20px 0 20px;
 }
+.intro {
+  margin: 40px;
+}
+.intro h5 {
+  font-family: "museo-sans-display", sans-serif;
+  font-weight: 900;
+  color: #50a4b9;
+  font-size: 3em;
+  text-align: center;
+}
+.intro h6 {
+  font-family: "museo-sans", sans-serif;
+  color: #50a4b9;
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+}
+.intro p {
+  color: #50a4b9;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */

@@ -78,9 +78,7 @@ $stmt = $link->prepare("SELECT box_headline_one,
         <div class="col-md-8 col-lg-push-2">
             <?php include 'search.php'; ?>
             <h1 class="page-header">Main about</h1>
-            <p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
-                quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
-            </p>
+            <p>Edit the three tabs (Headline and text) in the about section.</p>
             <!-- Nav tabs -->
             <?php echo $error; ?>
             <ul class="nav nav-tabs" role="tablist">
@@ -124,6 +122,9 @@ $stmt = $link->prepare("SELECT box_headline_one,
                         <input class="btn btn-default" name="tab3" type="submit" value="Update - <?php echo $bh3 ?>">
                     </form>
                 </div>
+                <br>
+                    <p>The red border box shows where on the site you are editing</p>
+                    <img src="aboutimg/textbox.jpg" width="400px" class="img-responsive">
             </div>
         </div>
     </div>

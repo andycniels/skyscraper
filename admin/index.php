@@ -8,9 +8,7 @@ include 'nav.php';
 <div class="right_col main_place" role="main">
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
-            <?php include 'search.php';  ?>
-            <h1 class="page-header">Skyscraper</h1> 
-            <?php  
+            <?php include 'search.php'; 
                 if (!empty($search)) {
                 ?>
                 <h3>Artists</h3>
@@ -144,7 +142,24 @@ include 'nav.php';
                 </table>
                 <?php    
                 }else{
-                    echo 'FORSIDEN';
+                    ?>
+                    <div class="intro">
+                        <h6>Welcome to</h6>
+                        <h5>SKYSCRAPER</h1>
+                        <h6>Admin page</h2>
+                        <p>Eu dolore duis si cernantur. Pariatur distinguantur do nostrud an ipsum fabulas 
+                            ubi multos aute se iudicem summis labore in velit, quis in incurreret et elit eu 
+                            an enim coniunctione, arbitror transferrem in pariatur est occaecat dolore 
+                            consequat ut aute doctrina tractavissent. Dolore te vidisse quo aute. Ita 
+                            consequat et consequat, admodum velit doctrina consequat. Aut nisi imitarentur 
+                            qui singulis labore esse aut quorum, a deserunt philosophari o si dolor 
+                            cupidatat cohaerescant. Nescius minim eram ubi cillum ut deserunt eram ne 
+                            deserunt concursionibus ex magna praesentibus fabulas enim fabulas hic mentitum 
+                            sint mentitum doctrina, excepteur aut anim consequat quo doctrina se eiusmod ad 
+                            aliquip aliqua expetendis voluptate, expetendis malis ab nostrud praetermissum. 
+                            Cupidatat quae summis appellat anim.</p>
+                    </div>
+                    <?php
                 }
             ?>
         </div>

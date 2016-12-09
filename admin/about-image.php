@@ -57,9 +57,8 @@ include 'nav.php';
         <div class="col-md-8 col-lg-push-2">
             <?php include 'search.php'; ?>
             <h1 class="page-header">Image upload</h1>
-            <p>Quibusdam ne eiusmod, probant esse nescius aut dolore commodo ita fidelissimae, 
-                quibusdam iis anim. Nulla laborum incididunt, fore est ea elit doctrina. 
-            </p>
+            <p>Add a new image to your frontpage in the about section.</p>
+            <p>This is your current image</p>
             <img class="img-responsive" src="../img/boxone.jpg">
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                 <?php echo $img_error; ?>
@@ -76,6 +75,9 @@ include 'nav.php';
                 <br>
                 <input class="btn btn-default" name="upload" type="submit" value="upload">
             </form>
+            <br>
+            <p>The red border box shows where on the site you are editing</p>
+            <img src="aboutimg/imgbox.jpg" width="400px" class="img-responsive">
         </div>
     </div>
 </div>
