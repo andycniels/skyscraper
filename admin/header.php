@@ -19,7 +19,6 @@ $title = str_replace('-', ' ', $title);
 		<title>Skyscraper 
             <?php 
             if ($title == 'index') {
-                echo '';
             }else{
                 echo '- '.$title;
             }

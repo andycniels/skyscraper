@@ -4,6 +4,9 @@ $acid = $_GET['acid'];
 $img = $_GET['img'];
 $linkid = $_GET['linkid'];
 $catid = $_GET ['catid'];
+if (empty($mid . $acid . $img . $linkid . $catid)) {
+    header('Location: ../admin');
+}
 if(isset($_GET['mid'])){
     //Delete artist
     require_once '../dbcon.php';

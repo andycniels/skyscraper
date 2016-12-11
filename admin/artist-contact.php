@@ -26,6 +26,7 @@ include 'nav.php';
                                                    
                                                FROM artist_contact a, music m
                                                WHERE m.fk_artistcontact_id = a.artist_contact_id
+                                               ORDER BY contact_name ASC
                                                ");
                 $stmt->execute();
                 $stmt->bind_result($acid, $cn, $p, $e, $bn, $fkid);
