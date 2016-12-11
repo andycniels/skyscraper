@@ -11,7 +11,10 @@ include 'nav.php';
                 <table class="table table-striped table-hover">
                     <tr>
                         <th>Band name</th>
-                        <th>Description</th>
+                        <th>
+                            Description
+                            <p style="visibility: hidden;">pppppppppppppppppppppppp</p>
+                        </th>
                         <th>Genre</th>
                         <th>Link</th>
                         <th>Contact person</th>
@@ -75,7 +78,7 @@ include 'nav.php';
                     <td><?= $acn ?></td>
                     <td><?= $acp ?></td>
                     <td><?= $ace ?></td>
-                    <td><a href="edit?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to add -<?= $bn ?>- to your artist list? this will display this artist on the front page');" ><i class="fa fa-heart-o" aria-hidden="true"></i></a></td>
+                    <td><a href="edit-demo?mid=<?= $mid ?>&linkid=<?= $linkid ?>&catid=<?= $fkcid ?>" onclick="return confirm('Are you sure you want to add -<?= $bn ?>- to your artist list? this will display this artist on the front page');" ><i class="fa fa-heart-o" aria-hidden="true"></i></a></td>
                     
                     <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>&linkid=<?= $linkid ?>&catid=<?= $fkcid ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- ? This will delete; the artist, the contact and music link');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                 </tr>

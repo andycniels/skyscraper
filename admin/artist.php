@@ -49,12 +49,12 @@ include 'nav.php';
                 while($stmt->fetch()) {
                 ?>
                 <tr>
-                    <td><img src="../img/artist/<?= $img ?>" class='img-responsive'></td>
+                    <td><img src="../img/artist/<?= $img ?>" width="300px" class='img-responsive'></td>
                     <td><?= $bn ?></td>
                     <td><?= $label ?></td>
                     <td><?= $genre ?></td>
                     <td><a href="edit-artist?mid=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                    <td><a href="edit?img=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="edit-artist-img?mid=<?= $mid ?>&img=<?= $img ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-contact?acid=<?= $fkacid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- and the contact info?');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                 </tr>
