@@ -1,6 +1,6 @@
 <?php
-$mid = $_GET['mid'];
-$id = $mid;
+$id = $_GET['id'];
+$mid = $id;
 //Update
 if (isset($_POST["edit"])){
     $label = filter_input(INPUT_POST, 'label');
@@ -21,7 +21,7 @@ if (isset($_POST["edit"])){
         $error4 = '<p style="color:red;">Must not be empty</p>';
     }else{
         require_once '../dbcon.php';
-        $sql = "UPDATE music SET band_name=?, text=?, fk_musicgenre_id=?, fk_label_id=? WHERE music_id = $id";
+        $sql = "UPDATE music SET band_name=?, text=?, fk_musicgenre_id=?, fk_label_id=? WHERE music_id = $mid";
         $stmt = $link->prepare($sql);
         $stmt->bind_param('ssii', $b_name, $b_text, $genre, $label);
         $stmt->execute();

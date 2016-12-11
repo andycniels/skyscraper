@@ -39,6 +39,7 @@ include 'nav.php';
                                                WHERE m.fk_musicgenre_id = g.genre_id
                                                AND m.fk_label_id = l.label_id
                                                AND fk_cat_id = 4
+                                               ORDER BY m.music_id DESC
                                         ");
                 $stmt->execute();
                 $stmt->bind_result($mid, $bn, $img, $text, $fkmid, $fklid, $fkacid, $fkcid,
@@ -53,7 +54,7 @@ include 'nav.php';
                     <td><?= $bn ?></td>
                     <td><?= $label ?></td>
                     <td><?= $genre ?></td>
-                    <td><a href="edit-artist?mid=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="edit-artist?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-img?mid=<?= $mid ?>&img=<?= $img ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-contact?acid=<?= $fkacid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- and the contact info?');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>

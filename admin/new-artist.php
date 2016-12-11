@@ -95,7 +95,7 @@ if (isset($_POST["artist"])){
         $stmt->bind_param('ssssssss', $b_name, $b_img, $b_text, $fk_soundcloud_id, $genre, $label, $fk_artistcontact_id, $fk_cat_id);
         $stmt->execute();
         $created = ' was created';
-        header("Refresh:2");
+        header('Location: artist');
     }
 }
 include 'header.php';
