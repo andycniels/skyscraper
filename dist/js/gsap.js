@@ -99,3 +99,11 @@ $(".artist:nth-child(4) .artist-info, .artist:nth-child(4) .artist-info").mousee
             
             var tween2 = TweenMax.to('.artist:nth-child(4) .artist-info', 1, {css:{opacity:'0'}, ease:Power4.easeOut}); 
         });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(".search-bar .search input[value=Search], .search-bar .search input[value=Search]").mouseenter(function(){
+			var tween = TweenMax.to('.search-bar .search input[value=Search]', 1, {css:{opacity:'0.7'}, ease:Power4.easeOut}); 
+            
+            var tween2 = TweenMax.to('.artist:nth-child(4) .artist-info', 1, {css:{opacity:'1'}, ease:Power4.easeOut}); 
+        });
