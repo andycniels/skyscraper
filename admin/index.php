@@ -18,8 +18,9 @@ include 'nav.php';
                         <th>Band name</th>
                         <th>Label</th>
                         <th>Genre</th>
-                        <th>Edit band details</th>
-                        <th>Edit band image</th>
+                        <th>Edit artist details</th>
+                        <th>Edit artist category</th>
+                        <th>Edit artist image</th>
                         <th>Edit artist contact info</th>
                         <th>Delete band and contact</th>
                     </tr>
@@ -59,7 +60,8 @@ include 'nav.php';
                         <td><?= $bn ?></td>
                         <td><?= $label ?></td>
                         <td><?= $genre ?></td>
-                        <td><a href="edit?mid=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                        <td><a href="edit-artist?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                        <td><a href="edit-artist-cat?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                         <td><a href="edit?img=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                         <td><a href="edit?acid=<?= $fkacid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                         <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- and the contact info?');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
@@ -147,17 +149,6 @@ include 'nav.php';
                         <h6>Welcome to</h6>
                         <h5>SKYSCRAPER</h1>
                         <h6>Admin page</h2>
-                        <p>Eu dolore duis si cernantur. Pariatur distinguantur do nostrud an ipsum fabulas 
-                            ubi multos aute se iudicem summis labore in velit, quis in incurreret et elit eu 
-                            an enim coniunctione, arbitror transferrem in pariatur est occaecat dolore 
-                            consequat ut aute doctrina tractavissent. Dolore te vidisse quo aute. Ita 
-                            consequat et consequat, admodum velit doctrina consequat. Aut nisi imitarentur 
-                            qui singulis labore esse aut quorum, a deserunt philosophari o si dolor 
-                            cupidatat cohaerescant. Nescius minim eram ubi cillum ut deserunt eram ne 
-                            deserunt concursionibus ex magna praesentibus fabulas enim fabulas hic mentitum 
-                            sint mentitum doctrina, excepteur aut anim consequat quo doctrina se eiusmod ad 
-                            aliquip aliqua expetendis voluptate, expetendis malis ab nostrud praetermissum. 
-                            Cupidatat quae summis appellat anim.</p>
                     </div>
                     <?php
                 }
