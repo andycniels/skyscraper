@@ -55,8 +55,17 @@
 							<ul class="nav navbar-nav navbar-right">
 								<li class="">
 									<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-										<img src="../img/jakob_d.jpg" alt="">
-										<p class="hidden-xs profile-name">Jakob Deichmann</p>
+                                        <?php
+                                        //name from user
+                                        require_once '../dbcon.php';
+                                        $stmt = $link->prepare("SELECT name FROM `user` WHERE user_id = $sid");
+                                            $stmt->execute();
+                                            $stmt->bind_result($name);
+                                            while($stmt->fetch()) {	
+                                            }
+                                        ?>
+										
+										<p class="profile-name"><?= $name ?></p>
 										<span class=" fa fa-angle-down"></span>
 									</a>
 									<ul class="dropdown-menu dropdown-usermenu pull-right">

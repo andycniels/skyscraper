@@ -7,7 +7,7 @@ session_start();
 if (!isset($_SESSION['id'])){
     ?> <script> window.location.replace('../') </script> <?php
 }
-$id = $_SESSION['id'];
+$sid = $_SESSION['id'];
 //jeg tager url'en som jeg er på og vælger det sidste, fjerner .php
 $title = basename($_SERVER['PHP_SELF'],'.php');
 // her lave jeg - og til mellemrum
