@@ -1,6 +1,5 @@
 <?php
 include 'header.php';
-include 'nav.php';
 ?>
 <!-- page content -->
 <div class="right_col main_place" role="main">

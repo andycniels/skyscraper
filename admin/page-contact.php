@@ -30,7 +30,6 @@ if (isset($_POST["contact"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 require_once '../dbcon.php';
 $stmt = $link->prepare("SELECT street, town, phone, email FROM `page_contact`");
     $stmt->execute();

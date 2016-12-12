@@ -19,7 +19,6 @@ if (isset($_POST["about"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 //select headline og tekst fra about
 require_once '../dbcon.php';
 $stmt = $link->prepare("SELECT headline, text FROM `about`");

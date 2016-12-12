@@ -30,7 +30,6 @@ if (isset($_POST["edit"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 require_once '../dbcon.php';
 $stmt = $link->prepare("SELECT contact_name, phone, email FROM `artist_contact` WHERE artist_contact_id = $acid");
     $stmt->execute();

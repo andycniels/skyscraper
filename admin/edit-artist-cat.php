@@ -21,7 +21,6 @@ if (isset($_POST["edit"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 require_once '../dbcon.php';
     $stmt = $link->prepare("SELECT fk_musicgenre_id, fk_label_id FROM music WHERE music_id = $id");
     $stmt->execute();

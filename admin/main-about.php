@@ -57,7 +57,6 @@ if (isset($_POST["tab3"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 //select headline and text from box 1,2,3
 require_once '../dbcon.php';
 $stmt = $link->prepare("SELECT box_headline_one,

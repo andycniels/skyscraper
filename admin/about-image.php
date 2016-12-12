@@ -49,7 +49,6 @@ if (isset($_POST["upload"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 ?>
 <!-- page content -->
 <div class="right_col main_place" role="main">

@@ -62,7 +62,6 @@ if (isset($_POST["edit"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 require_once '../dbcon.php';
 $stmt = $link->prepare("SELECT img FROM music WHERE music_id = $id");
     $stmt->execute();

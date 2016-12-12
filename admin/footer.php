@@ -1,4 +1,10 @@
-			</div>
+<?php
+session_start();
+if (!isset($_SESSION['id'])){
+    ?> <script> window.location.replace('../') </script> <?php
+}
+?>
+</div>
 		</div>
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -15,7 +15,6 @@ if (isset($_POST["about"])){
     }
 }
 include 'header.php';
-include 'nav.php';
 require_once '../dbcon.php';
 $stmt = $link->prepare("SELECT quote FROM `about`");
     $stmt->execute();

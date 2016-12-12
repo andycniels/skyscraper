@@ -1,7 +1,6 @@
 <?php
 $search = filter_input(INPUT_GET, 'search');
 include 'header.php';
-include 'nav.php';
 ?>
 	
 <!-- page content -->
