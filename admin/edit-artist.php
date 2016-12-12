@@ -35,6 +35,7 @@ require_once '../dbcon.php';
     $stmt->execute();
     $stmt->bind_result($b_name, $b_text, $lid, $gid);
     while($stmt->fetch()) {	
+        
     }
 ?>
 <!-- page content -->
