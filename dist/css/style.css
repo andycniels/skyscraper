@@ -8564,3 +8564,31 @@ h4 {
   color: #8b8b8b;
   font-family: "museo-sans", sans-serif;
 }
+.nav {
+  background-color: #50a4b9;
+  height: 60px;
+}
+.nav ul {
+  margin-top: 20px;
+  text-align: center;
+}
+.nav a {
+  color: white;
+}
+.nav ul li {
+  list-style: none;
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+.nav img {
+  margin-top: -12px;
+  margin-left: 20px;
+  width: 35px;
+  float: left;
+}
+.social {
+  float: right;
+  margin-top: -25px;
+  margin-right: 20px;
+}
