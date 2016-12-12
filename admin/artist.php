@@ -16,6 +16,7 @@ include 'nav.php';
                     <th>Label</th>
                     <th>Genre</th>
                     <th>Edit band details</th>
+                    <th>Edit band category</th>
                     <th>Edit band image</th>
                     <th>Edit artist contact info</th>
                     <th>Delete band and contact</th>
@@ -55,6 +56,7 @@ include 'nav.php';
                     <td><?= $label ?></td>
                     <td><?= $genre ?></td>
                     <td><a href="edit-artist?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="edit-artist-cat?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-img?mid=<?= $mid ?>&img=<?= $img ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-contact?acid=<?= $fkacid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- and the contact info?');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
