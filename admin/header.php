@@ -2,10 +2,12 @@
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
 <!-- Genre liste til music_genre fandt vi på; http://www.vfront.org/albums.sql  -->
 <!-- img thump til img upload; http://jsbin.com/hajoqexoku/edit?html,js,output  -->
-
-
-
 <?php
+session_start();
+if (!isset($_SESSION['id'])){
+    ?> <script> window.location.replace('../') </script> <?php
+}
+$id = $_SESSION['id'];
 //jeg tager url'en som jeg er på og vælger det sidste, fjerner .php
 $title = basename($_SERVER['PHP_SELF'],'.php');
 // her lave jeg - og til mellemrum
