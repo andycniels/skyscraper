@@ -27,7 +27,6 @@ if (isset($_POST["LOGIN"])){
         if(password_verify($pwd,$pwdHash)){
             session_start();
             $_SESSION['id'] = $id;
-            echo 'det virker';
             ?> <script> window.location.replace('admin/') </script> <?php
         }
         if(!password_verify($pwd,$pwdHash)){
@@ -60,15 +59,15 @@ if (isset($_POST["LOGIN"])){
                             <img src="img/logo-blue-whitline.png" alt="">
                         </div>-->
             <h1>SKYSCRAPER</h1>
-            <h2>Log in</h2>
-                <br>
-            <form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
-            <?= $error ?>
-            <input type="text" name="user_name" value="<?= $un ?>" placeholder="Email"><br><br>
-            <?= $error2 ?>
-            <input type="password" name="password" placeholder="Password"><br><br>
-            <input class="btn btn-info" name="LOGIN" type="submit" value="LOGIN">   
-            </form>                
+            <br>
+            <br>
+                <form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
+                    <?= $error ?>
+                    <input type="text" name="user_name" value="<?= $un ?>" placeholder="Email"><br><br>
+                    <?= $error2 ?>
+                    <input type="password" name="password" placeholder="Password"><br><br>
+                    <input class="btn btn-info" name="LOGIN" type="submit" value="LOGIN">   
+                </form>                
             </div>
         </div>
     </div>
