@@ -18,7 +18,7 @@
     </div>
     <div class="col-sm-6 no-padding">
         <div class="contact-info">
-            <h3 class="box-headline">contact inf</h3>
+            <h3 class="box-headline">contact info</h3>
             <hr class="headline-underline" align="left">
             <br>
             <h3>Gammel Kongevej 85 <br>
