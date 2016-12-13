@@ -27,7 +27,6 @@ if (isset($_POST["LOGIN"])){
         if(password_verify($pwd,$pwdHash)){
             session_start();
             $_SESSION['id'] = $id;
-            echo 'det virker';
             ?> <script> window.location.replace('admin/') </script> <?php
         }
         if(!password_verify($pwd,$pwdHash)){
@@ -52,13 +51,27 @@ if (isset($_POST["LOGIN"])){
 		<link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
-<form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
-    <?= $error ?>
-    <input type="text" name="user_name" value="<?= $un ?>" placeholder="Email"><br><br>
-    <?= $error2 ?>
-    <input type="password" name="password" placeholder="Password"><br><br>
-    <input class="btn btn-info" name="LOGIN" type="submit" value="LOGIN">   
-</form>
+<div class="container-fluid">
+    <div class="row">
+        <div class="hero-header">
+            <div class="hero-container">
+                        <!--<div class="logo">
+                            <img src="img/logo-blue-whitline.png" alt="">
+                        </div>-->
+            <h1>SKYSCRAPER</h1>
+            <br>
+            <br>
+                <form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
+                    <?= $error ?>
+                    <input type="text" name="user_name" value="<?= $un ?>" placeholder="Email"><br><br>
+                    <?= $error2 ?>
+                    <input type="password" name="password" placeholder="Password"><br><br>
+                    <input class="btn btn-info" name="LOGIN" type="submit" value="LOGIN">   
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- Bootstrap -->

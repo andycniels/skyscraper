@@ -70,6 +70,7 @@ include 'header.php';
                 <div class="form-group">
                     <img class="input-thumb" id="thumbnail">
                     <input type="file" name="fileToUpload" id="fileToUpload" value="focus.jpg" onchange="readURL(this);">
+                    <p style="color:red;">Only JPG!</p>
                 </div>
                 <br>
                 <input class="btn btn-default" name="upload" type="submit" value="upload">
