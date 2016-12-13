@@ -14,9 +14,6 @@
     </head>
     
     <body class="artist-body">
-        <?php 
-        include('nav.php');
-        ?>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
