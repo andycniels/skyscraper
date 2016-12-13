@@ -14,8 +14,37 @@
             <div class="col-sm-6 eq-height">
                 <div class="submit-info">
                     <h2>WE BUILD ARTISTS</h2>
-                    <p>WE ARE DEDICATED TO NEW AND INSPIRING ARTISTS. WE'D LOVE TO HEAR FROM YOU. SUBMIT YOUR DEMO BELOW.</p>
+                    <p><span style="color: #51a4b9">WE ARE DEDICATED</span> TO NEW AND INSPIRING ARTISTS<span style="color: #51a4b9">.</span> WE'D LOVE TO HEAR FROM YOU<span style="color: #51a4b9">.</span> SUBMIT YOUR DEMO BELOW<span style="color: #51a4b9">.</span></p>
                 </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 submit-wrapper">
+                <h2>SUBMIT DEMO</h2>
+                <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" class=demo-submit">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="band_name" placeholder="Artist name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="contact_name" placeholder="Contact name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="band_name" placeholder="Contact email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="soundcloud_link" placeholder="Link to your soundcloud">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="youtube_link" placeholder="Link to your youtube">
+                    </div>                    
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" name="band_name" placeholder="Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-default" name="artist" type="submit" value="Add artist">
+                    </div>
+                </form>
             </div>
         </div>
   

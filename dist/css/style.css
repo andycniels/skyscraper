@@ -8569,6 +8569,12 @@ h4 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  background-color: #fafafa;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -8597,7 +8603,7 @@ h4 {
   text-align: center;
   content: "";
   position: absolute;
-  width: 40%;
+  width: 30%;
   bottom: 0;
   height: 1px;
   border-bottom: solid 4px #50a4b9;
@@ -8610,10 +8616,27 @@ h4 {
   margin-right: 30px;
   color: #8b8b8b;
 }
-.submit-info {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+@media screen and (max-width: 639px) {
+  .submit-info {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .submit-info p {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+.submit-wrapper {
+  background-color: #50a4b9;
+}
+.submit-wrapper h2 {
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.form-group {
+  margin: 10px auto;
+  width: 60%;
 }
