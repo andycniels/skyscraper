@@ -1,11 +1,8 @@
 <?php
 // Initialize the session.
-
 session_start();
-
 // Unset all of the session variables.
 $_SESSION = array();
-
 // lukke sessionen, og slette session cookie.
 // Bemærk: Dette vil ødelægge sessionen, og ikke kun data session!
 if (ini_get("session.use_cookies")) {
@@ -17,5 +14,5 @@ if (ini_get("session.use_cookies")) {
 }
 // Endelig lukkede session
 session_destroy();
-header('Location: index.html');
+header('Location: ../');
 ?>
