@@ -27,7 +27,6 @@ if (isset($_POST["LOGIN"])){
         if(password_verify($pwd,$pwdHash)){
             session_start();
             $_SESSION['id'] = $id;
-            echo 'det virker';
             ?> <script> window.location.replace('admin/') </script> <?php
         }
         if(!password_verify($pwd,$pwdHash)){
