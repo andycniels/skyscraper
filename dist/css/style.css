@@ -8688,3 +8688,18 @@ h4 {
   color: #8b8b8b;
   opacity: 0.8;
 }
+.submit-wrapper input[name=fileToUpload] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.submit-wrapper label[for=fileToUpload] {
+  border: 1px solid white;
+  padding: 15px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 14px;
+}
