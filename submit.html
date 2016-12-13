@@ -21,31 +21,33 @@
 
         <div class="row">
             <div class="col-sm-12 submit-wrapper">
-                <h2>SUBMIT DEMO</h2>
+                <h2>WE'D LOVE TO HEAR FROM YOU</h2>
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" class=demo-submit">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="band_name" placeholder="Artist name">
+                        <input type="text" class="form-control" name="band_name" placeholder="ARTIST NAME">
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="contact_name" placeholder="Contact name">
+                    <div class="wrap-info">
+                    <div class="form-group contact_info">
+                        <input type="text" class="form-control" name="contact_name" placeholder="CONTACT NAME">
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="band_name" placeholder="Contact email">
+                    <div class="form-group contact_info">
+                        <input type="email" class="form-control" name="contact_email" placeholder="CONTACT EMAIL">
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="soundcloud_link" placeholder="Link to your soundcloud">
                     </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">youtube.com/channel/</span>
+                        <input type="text" class="form-control" name="youtube_link" placeholder="YOUTUBE CHANNEL">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">soundcloud.com/</span>
+                        <input type="text" class="form-control" name="soundcloud_link" placeholder="SOUNDCLOUD USERNAME">
+                    </div>                   
                     <div class="form-group">
-                        <input type="text" class="form-control" name="youtube_link" placeholder="Link to your youtube">
-                    </div>                    
-                    <div class="form-group">
-                        <textarea type="text" class="form-control" name="band_name" placeholder="Description"></textarea>
+                        <textarea type="text" class="form-control" name="band_name" placeholder="DESCRIPTION"></textarea>
                     </div>
                     <div class="form-group">
                         <input class="btn btn-default" name="artist" type="submit" value="Add artist">
                     </div>
-
-                    <h2>HEY!</h2>
                 </form>
             </div>
         </div>
