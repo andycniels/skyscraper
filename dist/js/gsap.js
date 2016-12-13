@@ -110,3 +110,9 @@ $(".search-bar .search input[value=Search], .search-bar .search input[value=Sear
         	var tween = TweenMax.to('.search-bar .search input[value=Search]', 0.750, {css:{backgroundColor:'#50a4b9', border: 'none', color: 'white'}, ease:Power4.easeOut});
             
         });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(".label-an, .label-an").mouseenter(function(){
+            var tween = TweenMax.to('.label-an', 1, {css:{backgroundColor:'white', border: '2px solid #50a4b9', color:'#50a4b9' }, ease:Power4.easeOut});  
+        });

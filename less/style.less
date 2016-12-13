@@ -698,6 +698,7 @@ h4 {
     margin: 20px auto;
     width: 60%;
     border-radius: 0;
+    border: none;
 }
 
 .form-group input {
@@ -748,15 +749,21 @@ h4 {
     opacity: 0;
     overflow: hidden;
     position: absolute;
-    z-index: -1;
+    z-index: 99999;
 }
 
-.submit-wrapper label[for=fileToUpload] {
+.submit-wrapper .label-an {
     border: 1px solid white;
     padding: 15px;
     font-family: 'Source Sans Pro';
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.fa {
+    margin-right: 12px;
 }
 
 

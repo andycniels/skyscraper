@@ -62,7 +62,7 @@
                     <div class="form-group">
                     <img class="input-thumb" id="thumbnail">
                     <input type="file" name="fileToUpload" id="fileToUpload" value="focus.jpg" onchange="readURL(this);">
-                    <label for="fileToUpload">Choose a file</label>
+                    <label class="label-an" for="fileToUpload"><i class="fa fa-upload" aria-hidden="true"></i>Choose an image</label>
                 </div>
                     <div class="form-group">
                         <input class="btn btn-default" name="artist" type="submit" value="Add artist">
@@ -71,6 +71,8 @@
                 </form>
             </div>
         </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+            <script src="dist/js/gsap.js"></script>
         <?php 
-            include'footer.php';
+            include 'footer.php';
         ?>
