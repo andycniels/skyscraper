@@ -8585,12 +8585,12 @@ h4 {
   position: relative;
 }
 .row-eq-height .eq-height {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-direction: column;
   background-color: #fafafa;
   position: relative;
   overflow: hidden;
