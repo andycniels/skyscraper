@@ -11,7 +11,7 @@
                     <img src="icons/US_Listen_on_Apple_Music_Badge.svg" alt="">
                 </div>
 <!--            </div>-->
-        </div>
+</div>
         <div class="row footer">
             <div class="col-sm-6 no-padding">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.8341057495727!2d12.547419751450349!3d55.67448490540157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253a06a917113%3A0x9d089c4343ef204a!2sGammel+Kongevej+85%2C+1610+K%C3%B8benhavn+V!5e0!3m2!1sda!2sdk!4v1481210728166" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen></iframe>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <!-- Bootstrap -->

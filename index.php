@@ -21,10 +21,8 @@
        <header>
             <div class="row">
                 <div class="hero-header">
+                   <?php include 'nav.php' ?>
                     <div class="hero-container">
-                        <!--<div class="logo">
-                            <img src="img/logo-blue-whitline.png" alt="">
-                        </div>-->
                         <h2><span class="text-left">WE ARE</span></h2>
                         <h1>SKYSCRAPER</h1>
                         <h2>AND WE <span class="high-text">BUILD ARTISTS</span></h2>
@@ -137,36 +135,3 @@ Vis vero nihil philosophia et, at labores abhorreant eum, ex eum sumo malorum. A
         <?php 
             include('footer.php');
         ?>
-    </div>
-        <!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!-- Bootstrap -->
-		<script src="dist/js/bootstrap.min.js"></script>
-        <!-- Show a thumbnail above the file input -->
-        <script>
-        //Thumbnail placeholder
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    $('#thumbnail')
-                        .attr('src', e.target.result)
-                        .width(150);
-                };
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        </script>
-        
-        <!-- Hero button jump to section -->
-        <script>
-            $(document).ready(function(){
-                $(".hero-btn").click(function(){
-                    $("html, body").animate({
-                        scrollTop: $(".contact-info").offset().top
-                    }, 1000);
-                });
-            });
-        </script>
-	</body>
-</html>
