@@ -8650,7 +8650,7 @@ nav .social a {
   content: "";
   position: absolute;
   width: 30%;
-  bottom: 0;
+  bottom: -3px;
   height: 1px;
   border-bottom: solid 4px #50a4b9;
 }
@@ -8671,6 +8671,11 @@ nav .social a {
     margin-right: 60px;
     margin-left: 60px;
   }
+  .eq-height p {
+    font-size: 4vw;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
 }
 .submit-wrapper {
   background-color: #303030;
@@ -8681,12 +8686,13 @@ nav .social a {
   text-align: center;
   margin-bottom: 30px;
   padding-top: 30px;
+  color: #fafafa;
 }
 .form-group,
 .input-group {
   font-family: 'Source Sans Pro';
   font-weight: 200px;
-  margin: 20px auto;
+  margin: 20px auto 0;
   width: 70%;
   border-radius: 0;
   border: none;
@@ -8726,6 +8732,9 @@ nav .social a {
   font-size: 16px;
   height: 45px;
 }
+.submit-wrapper textarea {
+  font-size: 16px;
+}
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #8b8b8b;
@@ -8736,16 +8745,19 @@ nav .social a {
   /* Mozilla Firefox 4 to 18 */
   color: #8b8b8b;
   opacity: 0.8;
+  font-size: 16px;
 }
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #8b8b8b;
   opacity: 0.8;
+  font-size: 16px;
 }
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #8b8b8b;
   opacity: 0.8;
+  font-size: 16px;
 }
 .submit-wrapper input[name=fileToUpload] {
   width: 0.1px;
