@@ -58,6 +58,8 @@
                 });
             });
         </script>
-
+        <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="dist/js/gsap.js"></script>
     </body>
 </html>
