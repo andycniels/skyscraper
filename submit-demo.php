@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Submit your demo</title>
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
-</head>
-
+<?php include 'header.php' ?>
 <body class="submit-body">
     <div class="row row-eq-height">
         <div class="col-sm-6 eq-height">

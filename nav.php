@@ -10,9 +10,9 @@
     <nav id="nav" class="collapse col-xs-12 col-sm-10 collapse">
         <div class="nav">
             <ul>
-                <li><a href="admin/">HOME</a></li>
-                <li><a href="#">FEATURED ARTIST</a></li>
-                <li><a href="#">SUBMIT DEMO</a></li>
+                <li><a href="admin/../">HOME</a></li>
+                <li><a href="featured-artist">FEATURED ARTIST</a></li>
+                <li><a href="submit-demo">SUBMIT DEMO</a></li>
             </ul>
         </div>    
         <div class="social">

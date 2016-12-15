@@ -1,18 +1,4 @@
-<!DOCTYPE HTML>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Featured Artists</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="dist/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="dist/css/style.css">
-        <!-- Fonts fra: https://typekit.com -->
-        <script src="https://use.typekit.net/tod5pae.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    </head>
-    
+<?php include 'header.php' ?>
     <body class="artist-body">
         <div class="container-fluid">
             <div class="row">
@@ -76,8 +62,6 @@
             </div>
             
         </div>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-        <script src="dist/js/gsap.js"></script>
-    </body>
-</html>
+        <?php
+        include 'footer.php';
+        ?>
