@@ -2,6 +2,8 @@
     <body class="artist-body">
         <div class="container-fluid">
             <div class="row">
+                <?php include 'nav.php' ?>
+                <div style="margin-top:13vh;"></div>
                 <div class="col-sm-12">
                     <h2 class="artist-headline">FEATURED ARTISTS</h2>
                 </div>

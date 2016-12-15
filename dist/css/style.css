@@ -8430,10 +8430,9 @@ h4 {
   .main-nav {
     position: absolute;
     z-index: 100;
-    background: none !important;
   }
   .top-nav-bar {
-    height: 70px;
+    height: 8vh !important;
     padding: 0 !important;
   }
   .top-nav-bar .burger {
@@ -8455,7 +8454,7 @@ h4 {
     float: left !important;
   }
   nav .nav ul {
-    padding: 2% !important;
+    padding: 2% 0 0 !important;
     text-align: center !important;
   }
   nav .nav li {
@@ -8632,8 +8631,7 @@ h4 {
 .affix {
   width: 100%;
   z-index: 999999999;
-  height: 52px;
-  background-color: rgba(80, 164, 185, 0.8);
+  height: 10vh;
 }
 .main-nav {
   position: absolute;
@@ -8645,7 +8643,8 @@ h4 {
   padding: 4% 0 0;
 }
 .top-nav-bar .brand-logo {
-  width: 6vh;
+  width: 5vh;
+  padding: 5px 0 0 0;
 }
 .top-nav-bar .burger {
   float: right;
@@ -8653,7 +8652,7 @@ h4 {
 .top-nav-bar .burger .fa {
   margin: 0;
   color: #50a4b9;
-  font-size: 1.8em;
+  font-size: 3em;
 }
 nav {
   height: 90vh;

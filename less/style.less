@@ -447,15 +447,15 @@ h4 {
         top: 250px;
     }
     /////////////////////// NAV BAR tablet and up ///////////////////////
-    .main-nav{position: absolute; z-index: 100; background: none !important;}
-    .top-nav-bar{height: 70px; padding:0 !important;
+    .main-nav{position: absolute; z-index: 100;}
+    .top-nav-bar{height: 8vh !important; padding:0 !important;
         .burger {float: none;
             .fa{margin: 0; color:@brand-primary; font-size: 1.8em;}
         }
     }
     nav{height: 90vh; width: 80% !important; float: right !important;
         .nav{overflow-x: hidden; overflow-y: auto; float:left !important;
-            ul{padding: 2% !important; text-align: center !important;}
+            ul{padding: 2% 0 0 !important; text-align: center !important;}
             li{list-style: none; text-align: left !important; margin:0 0 0 8% !important; display: inline-block;}
             a{padding:0 !important; font-size: 1.4em; text-decoration: none;
                 &:hover{text-decoration: none;}
@@ -629,12 +629,12 @@ h4 {
 }
 
 /////////////////////// NAV BAR ///////////////////////
-.affix{width: 100%; z-index: 999999999; height: 52px; background-color: fade(@brand-primary, 80%);}
+.affix{width: 100%; z-index: 999999999; height: 10vh;}
 .main-nav{position: absolute; z-index: 100; background: rgba(0, 0, 0, 0.87);}
 .top-nav-bar{height: 10vh; padding: 4% 0 0;
-    .brand-logo{width: 6vh;}
+    .brand-logo{width: 5vh; padding: 5px 0 0 0;}
     .burger {float: right;
-        .fa{margin: 0; color:@brand-primary; font-size: 1.8em;}
+        .fa{margin: 0; color:@brand-primary; font-size: 3em;}
     }
 }
 nav{height: 90vh;

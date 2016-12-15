@@ -4,9 +4,7 @@
        <header>
             <div class="row">
                 <div class="hero-header">
-                    
                         <?php include 'nav.php' ?>
-                    
                     <div class="hero-container">
                         <h2><span class="text-left">WE ARE</span></h2>
                         <h1>SKYSCRAPER</h1>
