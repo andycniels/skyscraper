@@ -447,7 +447,6 @@ h4 {
         top: 250px;
     }
     /////////////////////// NAV BAR tablet and up ///////////////////////
-    .affix{width: 100%; background-color: fade(@brand-primary)}
     .main-nav{position: absolute; z-index: 100; background: none !important;}
     .top-nav-bar{height: 70px; padding:0 !important;
         .burger {float: none;
@@ -630,6 +629,7 @@ h4 {
 }
 
 /////////////////////// NAV BAR ///////////////////////
+.affix{width: 100%; z-index: 999999999; height: 52px; background-color: fade(@brand-primary, 80%);}
 .main-nav{position: absolute; z-index: 100; background: rgba(0, 0, 0, 0.87);}
 .top-nav-bar{height: 10vh; padding: 4% 0 0;
     .brand-logo{width: 6vh;}
