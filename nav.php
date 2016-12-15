@@ -1,4 +1,4 @@
-<div class="main-nav">
+<div class="col-xs-12 main-nav">
     <div data-toggle="collapse" data-target="#nav" class="top-nav-bar col-xs-12 col-sm-2">
        <div class="col-xs-2 col-sm-4">
            <img class="img-responsive brand-logo" src="icons/logo-blk-whitline.png">
@@ -7,7 +7,7 @@
            <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
     </div>    
-    <nav id="nav" class="collapse col-xs-12 col-sm-10 collapse">
+    <nav id="nav" class="collapse navbar-collapse col-xs-12 col-sm-12">
         <div class="nav">
             <ul>
                 <li><a href="admin/../">HOME</a></li>

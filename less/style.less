@@ -446,6 +446,28 @@ h4 {
     .hero-btn, .fa-chevron-down {
         top: 250px;
     }
+    /////////////////////// NAV BAR ///////////////////////
+    .main-nav{position: absolute; z-index: 100; background: red !important;}
+    .top-nav-bar{height: 10vh; padding: 4% 0 0;
+        .burger {float: right;
+            .fa{margin: 0; color:@brand-primary; font-size: 1.8em;}
+        }
+    }
+    nav{height: 90vh;
+        .nav{overflow-x: hidden; overflow-y: auto; width: 100% !important;
+            ul{padding: 0;}
+            li{list-style: none; text-align: center; margin: 12% 0;}
+            a{padding: 6% 15%; font-size: 1.4em; text-decoration: none; display: inline-block;
+                &:hover{text-decoration: none;}
+            }
+        }
+        .social{text-align: center;
+            ul{padding: 0;}
+            li{list-style: none; display: inline-block; margin:5% 0;}
+            a{padding: 9% 30%; font-size: 2.2em;}
+        }
+}
+///////////////////////// NAV BAR SLUT /////////////////////
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -617,7 +639,9 @@ nav{height: 90vh;
     .nav{overflow-x: hidden; overflow-y: auto;
         ul{padding: 0;}
         li{list-style: none; text-align: center; margin: 12% 0;}
-        a{padding: 6% 15%; font-size: 1.4em;}
+        a{padding: 6% 15%; font-size: 1.4em; text-decoration: none;
+            &:hover{text-decoration: none;}
+        }
     }
     .social{text-align: center;
         ul{padding: 0;}
