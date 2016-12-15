@@ -2188,6 +2188,7 @@ select[multiple].input-lg {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -5053,7 +5054,9 @@ button.close {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -5848,6 +5851,7 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
+  -webkit-filter: none;
   filter: none;
 }
 .fa-stack {
@@ -8057,6 +8061,8 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
   transform: translateY(100%);
   text-align: center;
 }
@@ -8664,12 +8670,15 @@ nav .nav li {
   list-style: none;
   text-align: center;
   margin: 12% 0;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 11px;
 }
 nav .nav a {
   padding: 6% 15%;
   font-size: 1.4em;
   text-decoration: none;
-  color: #f3f3f3;
+  color: #fafafa;
 }
 nav .nav a:hover {
   text-decoration: none;
@@ -8684,11 +8693,12 @@ nav .social li {
   list-style: none;
   display: inline-block;
   margin: 5% 0;
+  font-size: 11px;
 }
 nav .social a {
   padding: 9% 30%;
   font-size: 2.2em;
-  color: #f3f3f3;
+  color: #50a4b9;
 }
 #thumbnail {
   display: block;
@@ -8705,10 +8715,13 @@ nav .social a {
   align-items: center;
   height: 100%;
   background-color: #fafafa;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
 }
 .row-eq-height .eq-height {
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
