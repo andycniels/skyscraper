@@ -4,6 +4,7 @@
         include'nav.php';
     ?>
     <div class="container-fluid">
+        <div style="margin-top:8vh;"></div>
     <div class="row row-eq-height">
 
         <div class="col-sm-6 eq-height">
