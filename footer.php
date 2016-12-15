@@ -10,11 +10,12 @@
                         <p>howdy@skyscraper.dk</p>  
                     </div>
                     </a>
-
-                    <div class="col-sm-4 info-box">
-                        <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        <p>@skyscraper</p>
-                    </div>
+                    <a href="https://www.facebook.com/skyscraperdk/?fref=ts">
+                        <div class="col-sm-4 info-box">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <p>@skyscraperdk</p>
+                        </div>
+                    </a>
                 </div>        
             <div class="row footer-bottom">
                 <div class="col-sm-12 footer-info">
