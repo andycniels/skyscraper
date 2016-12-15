@@ -2188,6 +2188,7 @@ select[multiple].input-lg {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -5053,7 +5054,9 @@ button.close {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -5848,6 +5851,7 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
+  -webkit-filter: none;
   filter: none;
 }
 .fa-stack {
@@ -8057,6 +8061,8 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
   transform: translateY(100%);
   text-align: center;
 }
@@ -8694,10 +8700,13 @@ nav .social a {
   align-items: center;
   height: 100%;
   background-color: #fafafa;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
 }
 .row-eq-height .eq-height {
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -8706,7 +8715,6 @@ nav .social a {
   background-color: #fafafa;
   position: relative;
   overflow: hidden;
-  padding: 0;
 }
 .eq-height h2 {
   position: relative;
@@ -8750,7 +8758,6 @@ nav .social a {
 }
 .submit-wrapper {
   background-color: #303030;
-  padding-bottom: 30px;
 }
 .submit-wrapper h2 {
   font-family: 'Source Sans Pro';
@@ -8799,7 +8806,6 @@ nav .social a {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 20px;
 }
 .submit-wrapper input {
   font-size: 16px;
@@ -8862,61 +8868,4 @@ nav .social a {
   padding: 15px;
   text-align: center;
   line-height: 15px;
-}
-.info-box {
-  text-align: center;
-  color: #8b8b8b;
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
-}
-.info-box p {
-  font-size: 15px;
-}
-.fa-map-marker {
-  font-size: 20px;
-  margin: 0 auto 10px;
-}
-.fa-envelope-o {
-  font-size: 20px;
-  margin: 0 auto 10px;
-}
-.fa-share-alt {
-  font-size: 20px;
-  margin: 0 auto 10px;
-}
-.row-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #fafafa;
-}
-@media screen and (max-width: 767px) {
-  .info-box {
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-}
-.footer-bottom {
-  background-color: #50a4b9;
-}
-.footer-map {
-  padding: 0;
-  margin: 0;
-}
-.footer-info h2 {
-  font-family: 'Source Sans Pro';
-  font-weight: 700;
-  color: #303030;
-  font-size: 25px;
-  margin-left: 20px;
-  margin-top: 20px;
-  position: relative;
-}
-.footer-info h2:before {
-  text-align: center;
-  content: "";
-  position: absolute;
-  width: 20%;
-  bottom: 0;
-  height: 1px;
-  border-bottom: solid 4px white;
 }
