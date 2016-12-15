@@ -447,24 +447,24 @@ h4 {
         top: 250px;
     }
     /////////////////////// NAV BAR ///////////////////////
-    .main-nav{position: absolute; z-index: 100; background: red !important;}
-    .top-nav-bar{height: 10vh; padding: 4% 0 0;
-        .burger {float: right;
+    .main-nav{position: absolute; z-index: 100; background: none !important;}
+    .top-nav-bar{height: 70px; padding:0 !important;
+        .burger {float: none;
             .fa{margin: 0; color:@brand-primary; font-size: 1.8em;}
         }
     }
-    nav{height: 90vh;
-        .nav{overflow-x: hidden; overflow-y: auto; width: 100% !important;
-            ul{padding: 0;}
-            li{list-style: none; text-align: center; margin: 12% 0;}
-            a{padding: 6% 15%; font-size: 1.4em; text-decoration: none; display: inline-block;
+    nav{height: 90vh; width: 80% !important; float: right !important;
+        .nav{overflow-x: hidden; overflow-y: auto; float:left !important;
+            ul{padding: 2% !important; text-align: center !important;}
+            li{list-style: none; text-align: left !important; margin:0 0 0 8% !important; display: inline-block;}
+            a{padding:0 !important; font-size: 1.4em; text-decoration: none;
                 &:hover{text-decoration: none;}
             }
         }
-        .social{text-align: center;
+        .social{text-align: center; float:right !important;
             ul{padding: 0;}
-            li{list-style: none; display: inline-block; margin:5% 0;}
-            a{padding: 9% 30%; font-size: 2.2em;}
+            li{list-style: none; display: inline-block; margin:0 !important;}
+            a{padding: 0 !important; font-size: 2.2em;}
         }
 }
 ///////////////////////// NAV BAR SLUT /////////////////////
@@ -631,6 +631,7 @@ h4 {
 /////////////////////// NAV BAR ///////////////////////
 .main-nav{position: absolute; z-index: 100; background: rgba(0, 0, 0, 0.87);}
 .top-nav-bar{height: 10vh; padding: 4% 0 0;
+    .brand-logo{width: 6vh;}
     .burger {float: right;
         .fa{margin: 0; color:@brand-primary; font-size: 1.8em;}
     }
@@ -639,14 +640,14 @@ nav{height: 90vh;
     .nav{overflow-x: hidden; overflow-y: auto;
         ul{padding: 0;}
         li{list-style: none; text-align: center; margin: 12% 0;}
-        a{padding: 6% 15%; font-size: 1.4em; text-decoration: none;
+        a{padding: 6% 15%; font-size: 1.4em; text-decoration: none; color: @brand-white;
             &:hover{text-decoration: none;}
         }
     }
     .social{text-align: center;
         ul{padding: 0;}
         li{list-style: none; display: inline-block; margin:5% 0;}
-        a{padding: 9% 30%; font-size: 2.2em;}
+        a{padding: 9% 30%; font-size: 2.2em; color: @brand-white;}
     }
 }
 ///////////////////////// NAV BAR SLUT /////////////////////

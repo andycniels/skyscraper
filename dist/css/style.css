@@ -8424,14 +8424,14 @@ h4 {
   .main-nav {
     position: absolute;
     z-index: 100;
-    background: red !important;
+    background: none !important;
   }
   .top-nav-bar {
-    height: 10vh;
-    padding: 4% 0 0;
+    height: 70px;
+    padding: 0 !important;
   }
   .top-nav-bar .burger {
-    float: right;
+    float: none;
   }
   .top-nav-bar .burger .fa {
     margin: 0;
@@ -8440,31 +8440,35 @@ h4 {
   }
   nav {
     height: 90vh;
+    width: 80% !important;
+    float: right !important;
   }
   nav .nav {
     overflow-x: hidden;
     overflow-y: auto;
-    width: 100% !important;
+    float: left !important;
   }
   nav .nav ul {
-    padding: 0;
+    padding: 2% !important;
+    text-align: center !important;
   }
   nav .nav li {
     list-style: none;
-    text-align: center;
-    margin: 12% 0;
+    text-align: left !important;
+    margin: 0 0 0 8% !important;
+    display: inline-block;
   }
   nav .nav a {
-    padding: 6% 15%;
+    padding: 0 !important;
     font-size: 1.4em;
     text-decoration: none;
-    display: inline-block;
   }
   nav .nav a:hover {
     text-decoration: none;
   }
   nav .social {
     text-align: center;
+    float: right !important;
   }
   nav .social ul {
     padding: 0;
@@ -8472,10 +8476,10 @@ h4 {
   nav .social li {
     list-style: none;
     display: inline-block;
-    margin: 5% 0;
+    margin: 0 !important;
   }
   nav .social a {
-    padding: 9% 30%;
+    padding: 0 !important;
     font-size: 2.2em;
   }
 }
@@ -8628,6 +8632,9 @@ h4 {
   height: 10vh;
   padding: 4% 0 0;
 }
+.top-nav-bar .brand-logo {
+  width: 6vh;
+}
 .top-nav-bar .burger {
   float: right;
 }
@@ -8655,6 +8662,7 @@ nav .nav a {
   padding: 6% 15%;
   font-size: 1.4em;
   text-decoration: none;
+  color: #f3f3f3;
 }
 nav .nav a:hover {
   text-decoration: none;
@@ -8673,6 +8681,7 @@ nav .social li {
 nav .social a {
   padding: 9% 30%;
   font-size: 2.2em;
+  color: #f3f3f3;
 }
 .row-eq-height {
   display: -webkit-box;
