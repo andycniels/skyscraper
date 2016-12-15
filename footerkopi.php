@@ -16,12 +16,8 @@
                     </div>
                 </div>        
             <div class="row footer-bottom">
-                <div class="col-sm-6 footer-info">
+                <div class="col-sm-12 footer-info">
                     <iframe src="http://mapbuildr.com/frame/hafz7n" frameborder="0" height="100%" width="100%"></iframe>
-                </div>
-
-                <div class="col-sm-6 footer-info">
-                    <h2>About</h2>
                 </div>
             </div>      
         <!-- jQuery -->
