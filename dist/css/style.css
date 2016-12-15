@@ -8764,6 +8764,7 @@ nav .social a {
 }
 .submit-wrapper {
   background-color: #303030;
+  padding-bottom: 30px;
 }
 .submit-wrapper h2 {
   font-family: 'Source Sans Pro';
@@ -8874,4 +8875,62 @@ nav .social a {
   padding: 15px;
   text-align: center;
   line-height: 15px;
+}
+.footer-info {
+  padding: 0;
+  margin: 0;
+}
+.info-box {
+  text-align: center;
+  color: #8b8b8b;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+}
+.info-box p {
+  font-size: 15px;
+}
+.fa-map-marker {
+  font-size: 20px;
+  margin: 0 auto 10px;
+}
+.fa-envelope-o {
+  font-size: 20px;
+  margin: 0 auto 10px;
+}
+.fa-share-alt {
+  font-size: 20px;
+  margin: 0 auto 10px;
+}
+.row-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fafafa;
+}
+@media screen and (max-width: 767px) {
+  .info-box {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+.footer-map {
+  padding: 0;
+  margin: 0;
+}
+.footer-info h2 {
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  color: #303030;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.footer-info h2:before {
+  text-align: center;
+  content: "";
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  height: 1px;
+  border-bottom: solid 4px white;
 }

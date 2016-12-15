@@ -137,11 +137,11 @@ $(".btn-an, .btn-an").mouseenter(function(){
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 $(".info-box, .info-box").mouseenter(function(){
-            var tween = TweenMax.to('.info-box', 1, {css:{color:'#50a4b9', scale: 0.98}, ease:Power4.easeOut});  
+            var tween = TweenMax.to('.info-box', 1, {css:{color:'#50a4b9'}, ease:Power4.easeOut});  
         });
 
         $(".info-box, .info-box").mouseleave(function(){
-            var tween = TweenMax.to('.info-box', 0.750, {css:{color:'#8b8b8b', scale: 1}, ease:Power4.easeOut});
+            var tween = TweenMax.to('.info-box', 0.750, {css:{color:'#8b8b8b'}, ease:Power4.easeOut});
             
         });                
       
