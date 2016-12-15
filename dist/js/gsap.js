@@ -132,5 +132,16 @@ $(".btn-an, .btn-an").mouseenter(function(){
         $(".btn-an, .btn-an").mouseleave(function(){
             var tween = TweenMax.to('.btn-an', 0.750, {css:{backgroundColor:'#303030', border: '1px solid white', color: 'white', scale: 1}, ease:Power4.easeOut});
             
-        });        
+        });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(".info-box, .info-box").mouseenter(function(){
+            var tween = TweenMax.to('.info-box', 1, {css:{color:'#50a4b9', scale: 0.98}, ease:Power4.easeOut});  
+        });
+
+        $(".info-box, .info-box").mouseleave(function(){
+            var tween = TweenMax.to('.info-box', 0.750, {css:{color:'#8b8b8b', scale: 1}, ease:Power4.easeOut});
+            
+        });                
       

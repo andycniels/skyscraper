@@ -1,5 +1,4 @@
 <div class="row our-partners text-center">
-<!--            <div class="our-partners text-center">-->
                <h2 class="box-headline">our partners</h2>
                 <div class="col-sm-4">
                     <img src="icons/GPMLogo.png" alt="">
@@ -10,7 +9,6 @@
                 <div class="col-sm-4">
                     <img src="icons/US_Listen_on_Apple_Music_Badge.svg" alt="">
                 </div>
-<!--            </div>-->
 </div>
         <div class="row footer">
             <div class="col-sm-6 no-padding">

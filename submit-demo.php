@@ -1,6 +1,11 @@
 <?php include 'header.php' ?>
 <body class="submit-body">
+    <?php 
+        include'nav.php';
+    ?>
+    <div class="container-fluid">
     <div class="row row-eq-height">
+
         <div class="col-sm-6 eq-height">
             <img src="img/man-bass.jpg" class="img-responsive">
         </div>
@@ -66,4 +71,7 @@
             </form>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+
+    <?php include 'footerkopi.php'; ?>
+
+      </div>

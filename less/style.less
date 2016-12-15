@@ -678,7 +678,8 @@ nav{height: 90vh;
     -webkit-flex-direction: column;
     background-color: #fafafa; 
     position: relative;
-    overflow: hidden;   
+    overflow: hidden;  
+    padding: 0; 
 }
 
 .eq-height h2 {
@@ -729,6 +730,7 @@ nav{height: 90vh;
 
 .submit-wrapper {
     background-color: @brand-grey;
+    padding-bottom: 30px;
 }
 
 
@@ -788,6 +790,7 @@ nav{height: 90vh;
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .submit-wrapper input {
@@ -854,3 +857,73 @@ nav{height: 90vh;
     text-align: center;
     line-height: 15px;
 }
+
+////////////////////////Footer//////////////////////
+
+.info-box {
+    text-align: center;
+    color: #8b8b8b;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+}
+
+.info-box p {
+    font-size: 15px;
+}
+
+.fa-map-marker {
+    font-size: 20px;
+    margin: 0 auto 10px;
+}
+
+.fa-envelope-o {
+    font-size: 20px;
+    margin: 0 auto 10px;
+}
+
+.fa-share-alt {
+    font-size: 20px;
+    margin: 0 auto 10px;
+}
+
+.row-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fafafa;
+}
+@media screen and (max-width: 767px) {
+    .info-box {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    }
+
+.footer-bottom {
+    background-color: @brand-primary;
+}    
+
+.footer-map {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info h2 {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    color: @brand-grey;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer-info h2:before {
+    text-align: center;
+    content : "";
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    height: 1px;
+    border-bottom: solid 4px white;
+}  
