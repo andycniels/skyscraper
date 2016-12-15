@@ -8427,6 +8427,9 @@ h4 {
   .fa-chevron-down {
     top: 250px;
   }
+  .affix {
+    width: 100%;
+  }
   .main-nav {
     position: absolute;
     z-index: 100;

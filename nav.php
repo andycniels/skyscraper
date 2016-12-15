@@ -1,5 +1,5 @@
 
-   
+   <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
         <div class="col-xs-12 main-nav">
             <div class="top-nav-bar col-xs-12 col-sm-1">
                <div class="col-xs-2">
@@ -26,4 +26,4 @@
                 </div>
             </nav>
         </div>
- 
+</div>
