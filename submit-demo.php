@@ -72,6 +72,6 @@
         </div>
     </div>
 
-    <?php include 'footerkopi.php'; ?>
+    <?php include 'footer.php'; ?>
 
       </div>
