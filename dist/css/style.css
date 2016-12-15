@@ -8722,6 +8722,7 @@ nav .social a {
   background-color: #fafafa;
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 .eq-height h2 {
   position: relative;
@@ -8814,6 +8815,7 @@ nav .social a {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  padding-top: 20px;
 }
 .submit-wrapper input {
   font-size: 16px;
