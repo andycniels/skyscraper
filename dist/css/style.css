@@ -8297,9 +8297,6 @@ ul.nav.nav-tabs {
 .contact-info h3 {
   margin: 0;
 }
-.front-row {
-  background-color: #50a4b9;
-}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media only screen and (min-width: 320px) {
@@ -8431,11 +8428,6 @@ ul.nav.nav-tabs {
   .about {
     padding-top: 20px;
     padding-bottom: 30px;
-  }
-  .tab-content p {
-    font-size: 1.9vw;
-    padding-bottom: 20px;
-    font-weight: 300;
   }
   .our-work img {
     margin: 50px;
@@ -8982,4 +8974,12 @@ nav .social a {
   bottom: 0;
   height: 1px;
   border-bottom: solid 4px white;
+}
+.front-row {
+  background-color: #50a4b9;
+}
+.tab-content p {
+  font-size: 1.6vw;
+  padding-bottom: 20px;
+  font-weight: 300;
 }
