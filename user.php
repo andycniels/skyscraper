@@ -1,5 +1,5 @@
-<!-- index no follow! -->
 <?php
+ob_start();
 session_start();
 if (!isset($_SESSION['id'])){
     ?> <script> window.location.replace('admin/../') </script> <?php
@@ -29,12 +29,12 @@ if (isset($_POST["SIGNUP"])){
         }
         $a = array($un, $user_name);
         if(count(array_unique($a)) == 1){
-            $msg = 'Email er den samme som i database';
+            $msg = "<p style='color:red;'>Email exist</p>";
         }else {
             //Add new user to database 
-            $sql = 'INSERT INTO USER (name, user_name, password) VALUES (?,?,?)';
+            $sql = 'INSERT INTO user (name, user_name, password) VALUES (?,?,?)';
             $stmt = $link->prepare($sql);        
-            $stmt->bind_param('sss',$name,$user_name,$pwd);
+            $stmt->bind_param('sss', $name, $user_name, $pwd);
             $stmt->execute();
             //besked til brugeren hvis det er korrekt oprettet..
             ?> <script> window.location.replace('admin/') </script> <?php

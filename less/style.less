@@ -469,7 +469,6 @@ ul.nav.nav-tabs {
         top: 250px;
     }
     /////////////////////// NAV BAR tablet and up ///////////////////////
-    .main-nav{position: absolute; z-index: 100;}
     .top-nav-bar{height: 70px; padding:0 !important;
         .burger {float: none;
             .fa{margin: 0; color:@brand-primary; font-size: 1.8em;}
@@ -651,17 +650,16 @@ ul.nav.nav-tabs {
 }
 
 /////////////////////// NAV BAR ///////////////////////
-.affix{width: 100%; z-index: 999999999; height: 8vh; background: rgba(0, 0, 0, 0.87);
-
+.affix{width: 100%; z-index: 100; height: 12vh; background: rgba(0, 0, 0, 0.87);
 }
-.main-nav{position: absolute; z-index: 100; background: rgba(0, 0, 0, 0.87);}
-.top-nav-bar{height: 8vh !important; padding:0 !important;
-    .brand-logo{width: 5vh; padding: 5px 0 0 0; margin-top: 8px;}
-    .burger {float: right;
-        .fa{margin-top: 18px; color:@brand-white; font-size: 1.8em;}
+.main-nav{position: absolute; z-index: 99999; background: rgba(0, 0, 0, 0.87);}
+.top-nav-bar{height: 12vh !important; padding:0 !important;
+    .brand-logo{width: 7vh; padding: 5px 0 0 0; margin-top: 8px;}
+    .burger {float: right; background: none !important; border:none !important; margin-top: 3vh;
+        .fa{color:@brand-white; font-size: 1.8em;}
     }
 }
-nav{height: 92vh;
+nav{height: 88vh;
     .nav{overflow-x: hidden; overflow-y: auto; padding: 0;
         ul{padding: 1% 0 0 0;}
         li{list-style: none; text-align: center; margin: 12% 0; font-family: 'Source Sans Pro'; font-weight: 300; font-size: 11px;}

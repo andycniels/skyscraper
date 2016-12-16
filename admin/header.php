@@ -1,8 +1,5 @@
-<!-- http://getbootstrap.com -->
-<!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
-<!-- Genre liste til music_genre fandt vi på; http://www.vfront.org/albums.sql  -->
-<!-- img thump til img upload; http://jsbin.com/hajoqexoku/edit?html,js,output  -->
 <?php
+ob_start();
 session_start();
 if (!isset($_SESSION['id'])){
     ?> <script> window.location.replace('../') </script> <?php

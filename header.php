@@ -2,6 +2,7 @@
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
 <!-- Genre liste til music_genre fandt vi på; http://www.vfront.org/albums.sql  -->
 <!-- img thump til img upload; http://jsbin.com/hajoqexoku/edit?html,js,output  -->
+
 <!DOCTYPE html>
 <html lang="da">
 	<head>

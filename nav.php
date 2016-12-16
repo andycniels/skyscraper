@@ -7,9 +7,9 @@
                         <img class="brand-logo" src="icons/logo-ff.png" alt="skyscraper logo">
                     </a>
                 </div>
-                <div data-toggle="collapse" data-target="#nav" class="col-xs-2 hidden-sm hidden-md hidden-lg burger">
+                <button data-toggle="collapse" data-target="#nav" class="col-xs-2 hidden-sm hidden-md hidden-lg burger">
                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
+                </button>
             </div>    
             <nav id="nav" class="collapse navbar-collapse col-xs-12 col-sm-11">
                 <div class="nav col-sm-8">
