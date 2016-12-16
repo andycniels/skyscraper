@@ -8736,7 +8736,7 @@ nav .social a {
   text-align: center;
   content: "";
   position: absolute;
-  width: 30%;
+  width: 10%;
   bottom: -3px;
   height: 1px;
   border-bottom: solid 4px #50a4b9;
@@ -8758,10 +8758,14 @@ nav .social a {
     margin-right: 60px;
     margin-left: 60px;
   }
+  .eq-height h2 {
+    padding-top: 20px;
+  }
   .eq-height p {
     font-size: 4vw;
     margin-right: 25px;
     margin-left: 25px;
+    padding-bottom: 20px;
   }
 }
 .submit-wrapper {
