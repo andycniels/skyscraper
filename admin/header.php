@@ -39,7 +39,7 @@ $title = str_replace('-', ' ', $title);
 					<div class="left_col scroll-view">
 						<div class="navbar nav_title" style="border: 0;">
 							<a href="../admin/" class="site_title">
-							<img src="../icons/SSlogotest.png" alt="">
+							<img src="../icons/logo-ff.png" alt="">
 							<span>Skyscraper</span>
 							</a>
 						</div>
@@ -58,7 +58,7 @@ $title = str_replace('-', ' ', $title);
 											<li><a href="quote">Quote (box 4)</a></li>
 										</ul>
 									</li>
-									</li>
+									
 									<li>
 										<a><i class="fa fa-id-card-o" aria-hidden="true"></i> Artists <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
