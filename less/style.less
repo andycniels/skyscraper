@@ -196,6 +196,10 @@ h4 {
     border: none;
 }
 
+.nav-tabs li {
+    text-align: center;
+}
+
 .nav-tabs li a {
     text-transform: uppercase;
     font-family: @font-secondary;
@@ -214,6 +218,13 @@ h4 {
         background-color: @brand-white;
             border-bottom: solid 2px @brand-primary;
         }
+}
+
+ul.nav.nav-tabs {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 300px;
 }
 
 .tab-pane p {
@@ -433,6 +444,23 @@ h4 {
         font-size: 2.5em;
         font-weight: 100;
     }
+
+    .about {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .tab-content p {
+    font-size: 1.9vw;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 639px) {
+    .tab-content p {
+        font-size: 3vw;
+    }
+} 
     
     .our-work img {
         margin: 50px;
@@ -736,6 +764,10 @@ nav{height: 92vh;
         margin-left: 25px;
         padding-bottom: 20px;
     }
+
+    .tab-content p {
+        font-size: 3vw;
+    }
 }
 
 .submit-wrapper {
@@ -937,4 +969,4 @@ nav{height: 92vh;
     bottom: 0;
     height: 1px;
     border-bottom: solid 4px white;
-}
+}   
