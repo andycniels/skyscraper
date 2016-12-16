@@ -3,8 +3,10 @@
         <div class="col-xs-12 main-nav">
             <div class="top-nav-bar col-xs-12 col-sm-1">
                <div class="col-xs-2">
-                   <img class=" brand-logo" src="icons/logo-blk-whitline.png">
-               </div>
+                    <a href="admin/../">
+                        <img class="brand-logo" src="icons/logo-ff.png" alt="skyscraper logo">
+                    </a>
+                </div>
                 <div data-toggle="collapse" data-target="#nav" class="col-xs-2 hidden-sm hidden-md hidden-lg burger">
                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
