@@ -67,7 +67,7 @@ include 'header.php';
                     <td>
                     <?php
                     if (!empty($y)) {
-                        echo "<a href='https://www.youtube.com/channel/$y' target='_blank'><img src='../icons/yticon.png'></a>";
+                        echo "<a href='https://www.youtube.com/$y' target='_blank'><img src='../icons/yticon.png'></a>";
                     }
                     if (!empty($s)) {
                         echo "<a href='https://soundcloud.com/$s' target='_blank'><img src='../icons/scicon.png'></a>";
