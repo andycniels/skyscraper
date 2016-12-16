@@ -50,6 +50,7 @@ include 'header.php';
                                                AND m.fk_artistcontact_id = a.artist_contact_id
                                                AND m.fk_soundcloud_id = l.soundcloud_id
                                                AND fk_cat_id = 3
+                                               ORDER BY m.music_id DESC
                                         ");
                 $stmt->execute();
                 $stmt->bind_result($mid, $bn, $img, $text, $fklinkid, $fkmid, $fkacid, $fkcid,
