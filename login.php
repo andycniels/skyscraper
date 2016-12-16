@@ -43,7 +43,7 @@ if (isset($_POST["LOGIN"])){
         <meta name="robots" content="noindex">
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title></title>
+		<title>Login</title>
 		<!-- Fonts fra: https://typekit.com -->
 		<script src="https://use.typekit.net/tod5pae.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -55,9 +55,9 @@ if (isset($_POST["LOGIN"])){
     <div class="row">
         <div class="hero-header">
             <div class="hero-container">
-                        <!--<div class="logo">
-                            <img src="img/logo-blue-whitline.png" alt="">
-                        </div>-->
+        <!--<div class="logo">
+                <img src="img/logo-blue-whitline.png" alt="">
+            </div>-->
             <h1>SKYSCRAPER</h1>
             <h2>Log in</h2>
             <br>

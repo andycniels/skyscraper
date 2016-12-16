@@ -60,17 +60,23 @@ $title = str_replace('-', ' ', $title);
 									</li>
 									</li>
 									<li>
-										<a><i class="fa fa-id-card" aria-hidden="true"></i> Artists <span class="fa fa-chevron-down"></span></a>
+										<a><i class="fa fa-id-card-o" aria-hidden="true"></i> Artists <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
 											<li><a href="new-artist">Add new</a></li>
 											<li><a href="artist">Artists (edit and delete)</a></li>
 										</ul>
 									</li>
                                     <li>
-										<a><i class="fa fa-envelope" aria-hidden="true"></i> Contact <span class="fa fa-chevron-down"></span></a>
+										<a><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
 											<li><a href="page-contact">Page Contact</a></li>
 											<li><a href="artist-contact">Artist Contact</a></li>
+										</ul>
+									</li>
+                                    <li>
+										<a><i class="fa fa-user-o" aria-hidden="true"></i> User <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li><a href="../user">Add new user</a></li>
 										</ul>
 									</li>
 								</ul>
