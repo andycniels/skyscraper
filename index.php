@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="row row-eq-height">
+        <div class="row row-eq-height front-row">
             <div class="col-sm-6 eq-height about">
                 <div>
 
@@ -75,8 +75,8 @@ Vis vero nihil philosophia et, at labores abhorreant eum, ex eum sumo malorum. A
                 </div>
             </div>  
 
-            <div class="col-sm-6 eq-height quote">
-
+            <div class="col-sm-6 eq-height">
+            	<p>"i give you the mausoleum of all hope and desire<span style="color: #51a4b9">.</span> i give it to you not that you may remember time<span style="color: #51a4b9">,</span> but that you might forget it now and then<span style="color: #51a4b9">.</span>"</p>
             </div>
         </div>
         <!-- main box info -->

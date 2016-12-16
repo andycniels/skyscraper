@@ -8297,6 +8297,9 @@ ul.nav.nav-tabs {
 .contact-info h3 {
   margin: 0;
 }
+.front-row {
+  background-color: #50a4b9;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media only screen and (min-width: 320px) {
@@ -8429,6 +8432,11 @@ ul.nav.nav-tabs {
     padding-top: 20px;
     padding-bottom: 30px;
   }
+  .tab-content p {
+    font-size: 1.9vw;
+    padding-bottom: 20px;
+    font-weight: 300;
+  }
   .our-work img {
     margin: 50px;
   }
@@ -8500,6 +8508,11 @@ ul.nav.nav-tabs {
   nav .social a {
     padding: 0 !important;
     font-size: 2.2em;
+  }
+}
+@media (min-width: 768px) and screen and (max-width: 639px) {
+  .tab-content p {
+    font-size: 3vw;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -8772,6 +8785,9 @@ nav .social a {
   margin-right: 30px;
   color: #8b8b8b;
 }
+.quote p {
+  background-color: #50a4b9;
+}
 @media screen and (max-width: 639px) {
   .submit-info {
     margin-top: 60px;
@@ -8966,14 +8982,4 @@ nav .social a {
   bottom: 0;
   height: 1px;
   border-bottom: solid 4px white;
-}
-.tab-content p {
-  font-size: 1.9vw;
-  padding-bottom: 20px;
-  font-weight: 300;
-}
-@media screen and (max-width: 639px) {
-  .tab-content p {
-    font-size: 3vw;
-  }
 }
