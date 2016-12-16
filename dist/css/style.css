@@ -2188,7 +2188,6 @@ select[multiple].input-lg {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
@@ -5054,9 +5053,7 @@ button.close {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -5851,7 +5848,6 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
   filter: none;
 }
 .fa-stack {
@@ -8061,8 +8057,6 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
   transform: translateY(100%);
   text-align: center;
 }
@@ -8477,11 +8471,11 @@ h4 {
   }
   nav .social ul {
     padding: 0;
+    margin-top: 10px !important;
   }
   nav .social li {
     list-style: none;
     display: inline-block;
-    margin: 0 !important;
   }
   nav .social a {
     padding: 0 !important;
@@ -8646,13 +8640,14 @@ h4 {
 .top-nav-bar .brand-logo {
   width: 5vh;
   padding: 5px 0 0 0;
+  margin-top: 8px;
 }
 .top-nav-bar .burger {
   float: right;
 }
 .top-nav-bar .burger .fa {
-  margin: 0;
-  color: #50a4b9;
+  margin-top: 18px;
+  color: #f3f3f3;
   font-size: 1.8em;
 }
 nav {
@@ -8698,7 +8693,7 @@ nav .social li {
 nav .social a {
   padding: 9% 30%;
   font-size: 2.2em;
-  color: #50a4b9;
+  color: #f3f3f3;
 }
 #thumbnail {
   display: block;
@@ -8715,13 +8710,10 @@ nav .social a {
   align-items: center;
   height: 100%;
   background-color: #fafafa;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
 }
 .row-eq-height .eq-height {
-  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
