@@ -95,7 +95,7 @@ if (isset($_POST["send"])){
         $stmt->bind_param('ssssssss', $bn, $img, $text, $fk_soundcloud_id, $genre, $label, $fk_artistcontact_id, $fk_cat_id);
         $stmt->execute();
         $created = ' was created';
-        header('Location: index');
+        header('Location: succes');
     }
 }
 include 'header.php' 
