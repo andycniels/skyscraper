@@ -1,5 +1,5 @@
 
-                <div class="row row-footer">
+                <div class="row row-footer contact-info">
                     <div class="col-sm-4 info-box">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                         <p>Gammel Kongevej 85, CPH</p>
