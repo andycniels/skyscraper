@@ -1,4 +1,31 @@
-<?php include 'header.php' ?>
+<?php include 'header.php'; 
+require_once 'dbcon.php';
+$stmt = $link->prepare("SELECT headline,
+                               text,
+                               img,
+                               quote,
+                               box_headline_one,
+                               box_text_one,
+                               box_headline_two,
+                               box_text_two,
+                               box_headline_three,
+                               box_text_three 
+                        FROM about");
+    $stmt->execute();
+    $stmt->bind_result($headline, 
+                       $txt,
+                       $img,
+                       $quote,
+                       $bh1,
+                       $bt1,
+                       $bh2,
+                       $bt2,
+                       $bh3,
+                       $bt3
+                      );
+    while($stmt->fetch()) {	
+    }
+?>
 <body>
     <div class="container-fluid">
        <header>
@@ -19,13 +46,13 @@
         </header>
         
         <div class="row row-eq-height">
-            <div class="col-sm-6 eq-height">
-                <img class="img-responsive" src="img/boxone.jpg">
+            <div class="col-sm-6 eq-height hidden-xs">
+                <img class="img-responsive" src="img/<?= $img ?>">
             </div>
 
             <div class="col-sm-6 eq-height">
-                <h2>ABOUT</h2>
-                <p><span style="color: #51a4b9">SKYSCRAPER</span> IS A RECORD LABEL AND DIGITAL MUSIC DISTRIBUTOR<span style="color: #51a4b9">,</span> PIONEERING THE MUSIC INDUSTRY INTO THE DIGITAL AGE<span style="color: #51a4b9">.</span></p>
+                <h2><?= $headline ?></h2>
+                <p><?= $txt ?></p>
             </div>
         </div>
 
@@ -36,39 +63,31 @@
                   <!-- Nav tabs -->
                   <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active">
-                        <a href="#who" aria-controls="home" role="tab" data-toggle="tab">Who are we?
+                        <a href="#who" aria-controls="home" role="tab" data-toggle="tab">
+                            <?= $bh1 ?>
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="#mission" aria-controls="profile" role="tab" data-toggle="tab">mission statement
+                        <a href="#mission" aria-controls="profile" role="tab" data-toggle="tab">
+                            <?= $bh2 ?>
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="#goal" aria-controls="messages" role="tab" data-toggle="tab">Goal
+                        <a href="#goal" aria-controls="messages" role="tab" data-toggle="tab">
+                            <?= $bh3 ?>
                         </a>
                     </li>
                   </ul>
                   <!-- Tab panes -->
                   <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="who">
-                        <p>Cu mei case apeirian definitionem. Ullum tantas efficiantur at sit. Nec vero decore impetus no, cu sea audiam delenit nusquam, harum percipitur est at. Cum consequat mnesarchum id. In est case facer, at vel quas fuisset evertitur.
-
-Vis vero nihil philosophia et, at labores abhorreant eum, ex eum sumo malorum. Ad nam tation tempor, nec cu falli phaedrum. Dicit labore ne duo, eos wisi omnesque eu. Ei sententiae elaboraret nam, ei cum vidit appetere voluptatum. Vero ridens detraxit ea vix.
-                        </p>  
+                        <p><?= $bt1 ?></p>  
                     </div>
                     <div role="tabpanel" class="tab-pane" id="mission">
-                        <p>Vis vero nihil philosophia et, at labores abhorreant eum, ex eum sumo malorum. Ad nam tation tempor, nec cu falli phaedrum. Dicit labore ne duo, eos wisi omnesque eu. Ei sententiae elaboraret nam, ei cum vidit appetere voluptatum. Vero ridens detraxit ea vix.
-                        Cu mei case apeirian definitionem. Ullum tantas efficiantur at sit. Nec vero decore impetus no, cu sea audiam delenit nusquam, harum percipitur est at. Cum consequat mnesarchum id. In est case facer, at vel quas fuisset evertitur.
-                        </p>
+                        <p><?= $bt2 ?></p>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="goal">
-                        <p>
-                        Lorem ipsum dolor sit amet, ei nostrud urbanitas sea, mea te nonumy impedit ancillae, ei primis sensibus mei. Ex sea autem nobis minimum. Nam ei legimus indoctum volutpat, vix ei vidisse posidonium. Mei ne mundi appareat accusata. Aperiri invidunt ex nam, porro nostrud recusabo in nam. Convenire suavitate sit an, at his dolor veniam.
-
-Cu mei case apeirian definitionem. Ullum tantas efficiantur at sit. Nec vero decore impetus no, cu sea audiam delenit nusquam, harum percipitur est at. Cum consequat mnesarchum id. In est case facer, at vel quas fuisset evertitur.
-
-Vis vero nihil philosophia et, at labores abhorreant eum, ex eum sumo malorum. Ad nam tation tempor, nec cu falli phaedrum. Dicit labore ne duo, eos wisi omnesque eu. Ei sententiae elaboraret nam, ei cum vidit appetere voluptatum. Vero ridens detraxit ea vix.
-                        </p>
+                        <p><?= $bt3 ?></p>
                     </div>
                   </div>
 
@@ -76,7 +95,7 @@ Vis vero nihil philosophia et, at labores abhorreant eum, ex eum sumo malorum. A
             </div>  
 
             <div class="col-sm-6 eq-height">
-            	<p>"i give you the mausoleum of all hope and desire<span style="color: #51a4b9">.</span> i give it to you not that you may remember time<span style="color: #51a4b9">,</span> but that you might forget it now and then<span style="color: #51a4b9">.</span>"</p>
+            	<p><?= $quote ?></p>
             </div>
         </div>
         <!-- main box info -->

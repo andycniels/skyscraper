@@ -45,10 +45,22 @@ if (isset($_POST["upload"])){
     }else{
         //upload to folder
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+        require_once '../dbcon.php';
+        $sql = 'UPDATE about SET img=? WHERE about_id=1';
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param('s', $img);
+        $stmt->execute();
         header("Refresh:0");
     }
 }
 include 'header.php';
+//select img
+require_once '../dbcon.php';
+$stmt = $link->prepare("SELECT img FROM `about`");
+    $stmt->execute();
+    $stmt->bind_result($img);
+    while($stmt->fetch()) {	
+    }
 ?>
 <!-- page content -->
 <div class="right_col main_place" role="main">
@@ -58,7 +70,7 @@ include 'header.php';
             <h1 class="page-header">Image upload</h1>
             <p>Add a new image to your frontpage in the about section.</p>
             <p>This is your current image</p>
-            <img class="img-responsive" src="../img/boxone.jpg">
+            <img class="img-responsive" src="../img/<?= $img ?>">
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                 <?php echo $img_error; ?>
                 <?php echo $img_error2; ?>
@@ -70,7 +82,6 @@ include 'header.php';
                 <div class="form-group">
                     <img class="input-thumb" id="thumbnail">
                     <input type="file" name="fileToUpload" id="fileToUpload" value="focus.jpg" onchange="readURL(this);">
-                    <p style="color:red;">Only JPG!</p>
                 </div>
                 <br>
                 <input class="btn btn-default" name="upload" type="submit" value="upload">

@@ -1,13 +1,21 @@
-
+<?php
+require_once 'dbcon.php';
+$stmt = $link->prepare("SELECT street, town, email FROM page_contact");
+    $stmt->execute();
+    $stmt->bind_result($s, $t, $e);
+    while($stmt->fetch()) {	
+    }
+?>
                 <div class="row row-footer contact-info">
                     <div class="col-sm-4 info-box">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>Gammel Kongevej 85, CPH</p>
+                        <p><?= $s ?></p>
+                        <p><?= $t ?></p>
                     </div>
-                    <a href="mailto:howdy@skyscraper.dk">
+                    <a href="mailto:<?= $e ?>">
                     <div class="col-sm-4 info-box">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <p>howdy@skyscraper.dk</p>  
+                        <p><?= $e ?></p>  
                     </div>
                     </a>
                     <a href="https://www.facebook.com/skyscraperdk/?fref=ts">
