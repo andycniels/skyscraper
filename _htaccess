@@ -1,0 +1,11 @@
+#http://stackoverflow.com/questions/4026021/remove-php-extension-with-htaccess
+#https://www.youtube.com/watch?v=lRmlDeB7Ovs
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+
+
+#RewriteRule ^user/([0-9]+) user.php?id=$1
