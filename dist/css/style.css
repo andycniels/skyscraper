@@ -8157,11 +8157,21 @@ h4 {
   margin-top: -2%;
 }
 .box-headline {
-  font-family: "museo-sans", sans-serif;
-  font-weight: 100;
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
   color: #303030;
+  position: relative;
   font-size: 2.5em;
   text-transform: uppercase;
+}
+.box-headline:before {
+  text-align: center;
+  content: "";
+  position: absolute;
+  width: 10%;
+  bottom: -3px;
+  height: 1px;
+  border-bottom: solid 4px #50a4b9;
 }
 .headline-underline {
   border-bottom: solid 4px #50a4b9;
@@ -8195,11 +8205,6 @@ h4 {
 .quote-mark img {
   width: 8%;
 }
-.signature {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-}
 .jakob-ceo img {
   width: 80%;
   display: block;
@@ -8219,29 +8224,32 @@ h4 {
 }
 .nav-tabs li a {
   text-transform: uppercase;
-  font-family: "museo-sans-display", sans-serif;
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  background-color: #fafafa;
 }
 .nav-tabs li a:hover {
-  background-color: #f3f3f3;
   border-bottom: solid 2px #50a4b9;
+  background-color: #fafafa;
+  border: none;
 }
 .nav-tabs li.active a {
   border: none !important;
   border-bottom: solid 4px #50a4b9 !important;
-  background-color: #f3f3f3 !important;
+  background-color: #fafafa;
 }
 .nav-tabs li.active a:hover {
   border-top: none;
   border-right: none;
   border-left: none;
-  background-color: #f3f3f3;
   border-bottom: solid 2px #50a4b9;
+  background-color: #fafafa;
 }
 ul.nav.nav-tabs {
   display: block;
   margin: 0 auto;
   padding-top: 20px;
-  width: 300px;
+  width: 350px;
 }
 .tab-pane p {
   padding-top: 20px;
@@ -8283,30 +8291,9 @@ ul.nav.nav-tabs {
   padding: 0;
   margin: 0;
 }
-.contact-info {
-  padding-left: 60px;
-  padding-top: 10px;
-  padding-bottom: 60px;
-  margin-top: 10px;
-}
-.contact-info .box-headline {
-  font-family: "museo-sans-display", sans-serif;
-  color: #303030;
-  text-transform: uppercase;
-}
-.contact-info h3 {
-  margin: 0;
-}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media only screen and (min-width: 320px) {
-  .signature {
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  .jakob-ceo img {
-    width: 150px;
-  }
   .nav-tabs li a {
     margin: 6px;
     padding: 0;
@@ -8353,8 +8340,6 @@ ul.nav.nav-tabs {
     line-height: 60px;
   }
   h2 {
-    font-family: "museo-sans", sans-serif;
-    color: #f3f3f3;
     font-size: 3em;
     font-weight: 100;
     margin: 0;
@@ -8382,9 +8367,7 @@ ul.nav.nav-tabs {
     margin-top: -2%;
   }
   .box-headline {
-    font-family: "museo-sans", sans-serif;
-    font-weight: 100;
-    color: #303030;
+    color: #fafafa;
     font-size: 2.5em;
   }
   .headline-underline {
@@ -8400,23 +8383,23 @@ ul.nav.nav-tabs {
   }
   .nav-tabs li a {
     text-transform: uppercase;
-    font-family: "museo-sans-display", sans-serif;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
   }
   .nav-tabs li a:hover {
-    background-color: #f3f3f3;
     border-bottom: solid 2px #50a4b9;
   }
   .nav-tabs li.active a {
     border: none !important;
     border-bottom: solid 4px #50a4b9 !important;
-    background-color: #f3f3f3 !important;
+    background-color: #fafafa;
   }
   .nav-tabs li.active a:hover {
     border-top: none;
     border-right: none;
     border-left: none;
-    background-color: #f3f3f3;
     border-bottom: solid 2px #50a4b9;
+    background-color: #fafafa;
   }
   .tab-pane p {
     padding-top: 20px;
@@ -8496,11 +8479,6 @@ ul.nav.nav-tabs {
   nav .social a {
     padding: 0 !important;
     font-size: 2.2em;
-  }
-}
-@media (min-width: 768px) and screen and (max-width: 639px) {
-  .tab-content p {
-    font-size: 3vw;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -8630,18 +8608,21 @@ ul.nav.nav-tabs {
   margin-left: 30px;
   margin-top: 120px;
   color: #303030;
-  font-family: "museo-sans", sans-serif;
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
 }
-.artist .artist-info .album-name {
+.artist .artist-info .genre {
   font-size: 20px;
   margin-left: 30px;
   color: #50a4b9;
-  font-family: "museo-sans", sans-serif;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
 }
-.artist .artist-info .services {
+.artist .artist-info .label-name {
   margin-left: 30px;
-  color: #8b8b8b;
-  font-family: "museo-sans", sans-serif;
+  color: #303030;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
 }
 .affix {
   width: 100%;
@@ -8738,6 +8719,10 @@ nav .social a {
   flex-wrap: wrap;
   position: relative;
 }
+.row-eq-height:before,
+.row-eq-height:after {
+  content: normal;
+}
 .row-eq-height .eq-height {
   display: -ms-flexbox;
   display: flex;
@@ -8774,9 +8759,6 @@ nav .social a {
   margin-left: 30px;
   margin-right: 30px;
   color: #8b8b8b;
-}
-.quote p {
-  background-color: #50a4b9;
 }
 @media screen and (max-width: 639px) {
   .submit-info {
@@ -8973,11 +8955,50 @@ nav .social a {
   height: 1px;
   border-bottom: solid 4px white;
 }
-.front-row {
-  background-color: #50a4b9;
-}
 .tab-content p {
   font-size: 1.6vw;
   padding-bottom: 20px;
   font-weight: 300;
+}
+.quote p {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #303030;
+  font-weight: 300;
+}
+.signature {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+.row-eq-height .quote {
+  background-color: #50a4b9;
+}
+.front-row {
+  background-color: #50a4b9;
+}
+.row-eq-height .eq-height .title {
+  font-size: 1.5vw;
+  display: inline-block;
+}
+.quote-icon {
+  width: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 639px) {
+  .row-eq-height .quote {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .row-eq-height .eq-height .title {
+    font-size: 3vw;
+  }
+  .signature {
+    width: 100px;
+  }
+  .tab-content p {
+    font-size: 3vw;
+  }
 }

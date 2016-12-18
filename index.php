@@ -94,8 +94,14 @@ $stmt = $link->prepare("SELECT headline,
                 </div>
             </div>  
 
-            <div class="col-sm-6 eq-height">
+            <div class="col-sm-6 eq-height quote">
+            <div class="holder">
+              <img class="quote-icon" src="icons/quote.png">
             	<p><?= $quote ?></p>
+              <br>
+              <p class="title"><span style="color: white;">JAKOB DEICHMANN</span><br>CEO @SKYSCRAPER</p>
+              <img src="img/signature.png" class="signature">
+              </div>
             </div>
         </div>
         <!-- main box info -->

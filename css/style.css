@@ -8775,9 +8775,6 @@ nav .social a {
   margin-right: 30px;
   color: #8b8b8b;
 }
-.quote p {
-  background-color: #50a4b9;
-}
 @media screen and (max-width: 639px) {
   .submit-info {
     margin-top: 60px;
@@ -8980,4 +8977,12 @@ nav .social a {
   font-size: 1.6vw;
   padding-bottom: 20px;
   font-weight: 300;
+}
+.quote {
+  background-color: #50a4b9;
+}
+.quote p {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 }
