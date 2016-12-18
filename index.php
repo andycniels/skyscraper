@@ -104,7 +104,7 @@ $stmt = $link->prepare("SELECT headline,
                 <h2 class="box-headline text-center">our work</h2>
                 <div class="col-sm-3">
                     <img src="icons/power.svg" alt="power">
-                    <p>digital disruption</p>
+                    <p>digital disrupion</p>
                 </div>
                 <div class="col-sm-3">
                     <img src="icons/setting.svg" alt="cog">
