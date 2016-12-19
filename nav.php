@@ -4,7 +4,7 @@
             <div class="top-nav-bar col-xs-12 col-sm-1">
                <div class="col-xs-2">
                     <a href="admin/../">
-                        <img class="brand-logo" src="icons/logo-ff.png" alt="skyscraper logo">
+                        <img class="brand-logo" src="icons/logo-black-wht-line_RGB.png" alt="skyscraper logo">
                     </a>
                 </div>
                 <button data-toggle="collapse" data-target="#nav" class="col-xs-2 hidden-sm hidden-md hidden-lg burger">

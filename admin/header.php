@@ -36,7 +36,7 @@ $title = str_replace('-', ' ', $title);
 					<div class="left_col scroll-view">
 						<div class="navbar nav_title" style="border: 0;">
 							<a href="../admin/" class="site_title">
-							<img src="../icons/logo-ff.png" alt="" height="32px" width="32px">
+							<img src="../icons/logo-black-wht-line_RGB.png" alt="" height="40px">
 							<span>Skyscraper</span>
 							</a>
 						</div>
