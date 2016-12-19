@@ -19,7 +19,7 @@
             </div>
                         
             <div class="row artistwrapper">
-                <div class="col-sm-6 artist">
+                <div class="col-md-4 col-lg-3 artist">
                     <div class="overlay">    
                     </div>
                     <div class="artist-info">
@@ -29,7 +29,7 @@
                         </div>
                     <img src="img/bishop.jpg" alt="gramofon streaming device" class="img-responsive">
                 </div>
-                <div class="col-sm-6 artist">
+                <div class="col-lg-3 col-md-4 artist">
                     <div class="overlay">
                     </div>
                     <div class="artist-info">
@@ -40,7 +40,7 @@
                     <img src="img/shins.jpg" alt="gramofon streaming device" class="img-responsive">
                 </div>
             
-                <div class="col-sm-6 artist">
+                <div class="col-lg-3 col-md-4 artist">
                     <div class="overlay">
                     </div>
                         <div class="artist-info">
@@ -51,7 +51,7 @@
                     <img src="img/foo.jpg" alt="gramofon streaming device" class="img-responsive">
                 </div>
 
-                <div class="col-sm-6 artist">
+                <div class="col-lg-3 col-md-4 artist">
                     <div class="overlay">
                     </div>
                     <div class="artist-info">

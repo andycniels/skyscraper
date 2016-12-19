@@ -74,6 +74,7 @@ $title = str_replace('-', ' ', $title);
 										<a><i class="fa fa-user-o" aria-hidden="true"></i> User <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
 											<li><a href="../user">Add new user</a></li>
+											<li><a href="#">Delete user</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -112,7 +113,7 @@ $title = str_replace('-', ' ', $title);
 								</li>
 								<li role="presentation">
 									<a href="demo" class="dropdown-toggle info-number">
-									<i class="fa fa-music fa-2x" aria-hidden="true"></i>
+									Talent inbox
                                     <?php
                                     require_once '../dbcon.php';
                                     $stmt = $link->prepare("SELECT COUNT(music_id) FROM music WHERE fk_cat_id = 3;");

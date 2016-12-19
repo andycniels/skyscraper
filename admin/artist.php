@@ -5,6 +5,7 @@ include 'header.php';
 <div class="right_col main_place" role="main">
     <div class="row">
         <div class="col-md-8 col-lg-push-2">
+            <?php include 'search.php'; ?>
             <h1 class="page-header">Artist</h1>
             <p>View, edit or delete artists.</p>
             <table class="table table-striped table-hover">
@@ -15,6 +16,7 @@ include 'header.php';
                     <th>Genre</th>
                     <th>Edit band details</th>
                     <th>Edit band category</th>
+                    <th>Edit Social info</th>
                     <th>Edit band image</th>
                     <th>Edit artist contact info</th>
                     <th>Delete band and contact</th>
@@ -55,6 +57,7 @@ include 'header.php';
                     <td><?= $genre ?></td>
                     <td><a href="edit-artist?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-cat?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="edit-artist-link?id=<?= $mid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-img?mid=<?= $mid ?>&img=<?= $img ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="edit-artist-contact?acid=<?= $fkacid ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                     <td><a href="delete?mid=<?= $mid ?>&acid=<?= $fkacid ?>&img=<?= $img ?>" onclick="return confirm('Are you sure you want to delete -<?= $bn ?>- and the contact info?');" ><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
