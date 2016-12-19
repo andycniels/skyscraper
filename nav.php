@@ -16,14 +16,14 @@
                     <ul>
                         <li><a href="admin/../">HOME</a></li>
                         <li><a href="featured-artist">FEATURED ARTIST</a></li>
-                        <li><a href="submit-demo">SUBMIT DEMO</a></li>
+                        <li><a href="submit-your-talent">SUBMIT YOUR TALENT</a></li>
                     </ul>
                 </div>    
                 <div class="social">
                     <ul>
-                        <li><a href="https://image.freepik.com/free-icon/thumbs-up_318-31579.jpg" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                        <li><a href="https://image.freepik.com/free-icon/thumbs-up_318-31579.jpg" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="https://image.freepik.com/free-icon/thumbs-up_318-31579.jpg" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/jakobdeichmann/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </nav>

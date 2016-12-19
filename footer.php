@@ -18,10 +18,10 @@ $stmt = $link->prepare("SELECT street, town, email FROM page_contact");
                         <p><?= $e ?></p>  
                     </div>
                     </a>
-                    <a href="https://www.facebook.com/skyscraperdk/?fref=ts">
+                    <a href="https://www.linkedin.com/company/2863556?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2863556%2Cidx%3A2-1-2%2CtarId%3A1482159143974%2Ctas%3Askyscraper%20corp" target="_blank">
                         <div class="col-sm-4 info-box">
                             <i class="fa fa-share-alt" aria-hidden="true"></i>
-                            <p>@skyscraperdk</p>
+                            <p>Linkedin</p>
                         </div>
                     </a>
                 </div>        
