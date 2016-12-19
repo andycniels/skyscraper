@@ -10,6 +10,9 @@ if (isset($_POST["artist"])){
     $c_name = filter_input(INPUT_POST, 'contact_name');
     $c_phone = filter_input(INPUT_POST, 'contact_phone');
     $c_email = filter_input(INPUT_POST, 'contact_email');
+    $yl = filter_input(INPUT_POST, 'youtube_link');
+    $sl = filter_input(INPUT_POST, 'soundcloud_link');
+    $ml = filter_input(INPUT_POST, 'music_link');
     
     //upload img to folder
     $target_dir = "../img/artist/";
@@ -73,27 +76,34 @@ if (isset($_POST["artist"])){
     else if(empty($_POST["contact_email"])){
         $error8 = '<p style="color:red;">Must not be empty</p>';
     }else{
-        
+        //move img to folder
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-        //first insert into artist contact
+        //insert into artist contact
         require_once '../dbcon.php';
         $sql = "INSERT INTO artist_contact (contact_name, phone, email) VALUES (?,?,?)";
         $stmt = $link->prepare($sql);                 
         $stmt->bind_param('sss', $c_name, $c_phone, $c_email);
         $stmt->execute();
-        
-        //select last id so it can be used in the next insert
+        //select last id so it can be used in the last insert
         $fk_artistcontact_id = (mysqli_insert_id($link));
+        
+        //insert into link
+        $sql = "INSERT INTO link (y_url, s_url, m_url) VALUES (?,?,?)";
+        $stmt = $link->prepare($sql);                 
+        $stmt->bind_param('sss', $sl, $yl, $ml);
+        $stmt->execute();
+        //select last id so it can be used in the last insert
+        $fk_soundcloud_id = (mysqli_insert_id($link));
+        
         //set fk_cat_id = 4 is = to artist in database
         $fk_cat_id = 4;
-        //set fk_soundcloud_id to 0
-        $fk_soundcloud_id == 0;
         //second insert into music
-        require_once '../dbcon.php';
         $sql = "INSERT INTO `music` (band_name, img, text, fk_soundcloud_id, fk_musicgenre_id, fk_label_id, fk_artistcontact_id, fk_cat_id) VALUES (?,?,?,?,?,?,?,?)";
         $stmt = $link->prepare($sql);                 
         $stmt->bind_param('ssssssss', $b_name, $b_img, $b_text, $fk_soundcloud_id, $genre, $label, $fk_artistcontact_id, $fk_cat_id);
         $stmt->execute();
+        
+        
         $created = ' was created';
         header('Location: artist');
     }
@@ -174,6 +184,18 @@ include 'header.php';
                 <?php echo $error8; ?>
                 <div class="form-group">
                     <input type="text" class="form-control" name="contact_email" value="<?= $c_email ?>" placeholder="Contact email">
+                </div>
+                <p style="color:green;">Social media (fill at least one)</p>
+                <div class="input-group">
+                    <span class="input-group-addon">youtube.com/</span>
+                    <input type="text" class="form-control" value="<?= $yl ?>" name="youtube_link" placeholder="YOUTUBE CHANNEL">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">soundcloud.com/</span>
+                    <input type="text" class="form-control" value="<?= $sl ?>" name="soundcloud_link" placeholder="SOUNDCLOUD USERNAME">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="music_link" value="<?= $ml ?>" placeholder="Spotify link">
                 </div>
                 <input class="btn btn-default" name="artist" type="submit" value="Add artist">
             </form>
