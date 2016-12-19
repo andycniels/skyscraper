@@ -32,7 +32,7 @@ $stmt = $link->prepare("SELECT quote FROM `about`");
             <?php include 'search.php'; ?>
             <h1 class="page-header">Quote</h1>
             <p>Edit the quote box in the about section</p>
-            <p style="color:red;">Max 350 characters...</p>
+            <p style="color:red;">Max 255 characters with spaces</p>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
             <div class="form-group">
              <?php echo $error; ?>

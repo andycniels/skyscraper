@@ -1,4 +1,4 @@
-<?php include 'header.php'; 
+        <?php include 'header.php'; 
 require_once 'dbcon.php';
 $stmt = $link->prepare("SELECT headline,
                                text,
@@ -24,7 +24,7 @@ $stmt = $link->prepare("SELECT headline,
                        $bt3
                       );
     while($stmt->fetch()) {	
-    }
+    } 
 ?>
 <body>
     <div class="container-fluid">
@@ -83,7 +83,7 @@ $stmt = $link->prepare("SELECT headline,
                     <div role="tabpanel" class="tab-pane active" id="who">
                         <p><?= $bt1 ?></p>  
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="mission">
+                    <div role="tabpanel" class="tab-pane" id="mission">                      
                         <p><?= $bt2 ?></p>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="goal">

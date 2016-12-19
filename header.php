@@ -2,7 +2,17 @@
 <!-- Bootstrap Theme fra  https://github.com/puikinsh/gentelella/releases  -->
 <!-- Genre liste til music_genre fandt vi på; http://www.vfront.org/albums.sql  -->
 <!-- img thump til img upload; http://jsbin.com/hajoqexoku/edit?html,js,output  -->
-
+<?php
+//make a limit som database..
+function custom_echo($x, $length){
+            if(strlen($x)<=$length){
+                echo $x;
+            }else{
+                $y=substr($x,0,$length) . '...';
+                echo $y;
+            }
+        }
+?>
 <!DOCTYPE html>
 <html lang="da">
 	<head>

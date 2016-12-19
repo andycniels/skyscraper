@@ -34,6 +34,7 @@ $stmt = $link->prepare("SELECT headline, text FROM `about`");
             <?php include 'search.php'; ?>
             <h1 class="page-header">Short description</h1>
             <p>Edit the headline and shot description in the about section.</p>
+            <p style="color:red;">Max 277 characters with spaces</p>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div class="form-group">
                     <?php echo $error; ?>
