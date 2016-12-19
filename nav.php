@@ -1,3 +1,4 @@
+
    <div data-spy="affix" data-offset-top="500">
         <div class="col-xs-12 main-nav">
             <div class="top-nav-bar col-xs-12 col-sm-1">
@@ -16,7 +17,12 @@
                         <li><a href="admin/../">HOME</a></li>
                         <li><a href="featured-artist">FEATURED ARTIST</a></li>
                         <li><a href="submit-your-talent">SUBMIT YOUR TALENT</a></li>
-                        
+                        <?php
+                            //if login is true
+                            if (isset($_SESSION['id'])){
+                                echo'<li><a href="admin/"><i class="fa fa-unlock" style="color:#fff;" aria-hidden="true"></i> Admin</a></li>';
+                            } 
+                        ?>
                     </ul>
                 </div>    
                 <div class="social">
