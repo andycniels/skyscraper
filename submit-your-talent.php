@@ -79,9 +79,9 @@ if (isset($_POST["send"])){
         $fk_artistcontact_id = (mysqli_insert_id($link));
         
         //insert into link
-        $sql = "INSERT INTO link (y_url, s_url) VALUES (?,?)";
+        $sql = "INSERT INTO link (s_url, y_url) VALUES (?,?)";
         $stmt = $link->prepare($sql);                 
-        $stmt->bind_param('ss', $yl, $sl);
+        $stmt->bind_param('ss', $sl, $yl);
         $stmt->execute();
         //select last id so it can be used in the next insert
         $fk_soundcloud_id = (mysqli_insert_id($link));

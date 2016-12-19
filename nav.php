@@ -1,4 +1,3 @@
-
    <div data-spy="affix" data-offset-top="500">
         <div class="col-xs-12 main-nav">
             <div class="top-nav-bar col-xs-12 col-sm-1">
@@ -17,6 +16,7 @@
                         <li><a href="admin/../">HOME</a></li>
                         <li><a href="featured-artist">FEATURED ARTIST</a></li>
                         <li><a href="submit-your-talent">SUBMIT YOUR TALENT</a></li>
+                        
                     </ul>
                 </div>    
                 <div class="social">

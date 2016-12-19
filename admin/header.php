@@ -74,7 +74,7 @@ $title = str_replace('-', ' ', $title);
 										<a><i class="fa fa-user-o" aria-hidden="true"></i> User <span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu">
 											<li><a href="../user">Add new user</a></li>
-											<li><a href="#">Delete user</a></li>
+											<li><a href="user">Delete user</a></li>
 										</ul>
 									</li>
 								</ul>

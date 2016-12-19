@@ -12,7 +12,7 @@ if (isset($_POST["edit"])){
     require_once '../dbcon.php';
     $sql = "UPDATE link SET s_url=?, y_url=?, m_url=? WHERE soundcloud_id = $lid";
     $stmt = $link->prepare($sql);
-    $stmt->bind_param('sss', $yl, $sl, $ml);
+    $stmt->bind_param('sss', $sl, $yl, $ml);
     $stmt->execute();
     header('Location: artist');
 }
@@ -36,11 +36,11 @@ require_once '../dbcon.php';
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div class="input-group">
                     <span class="input-group-addon">youtube.com/</span>
-                    <input type="text" class="form-control" value="<?= $su ?>" name="youtube_link" placeholder="YOUTUBE CHANNEL">
+                    <input type="text" class="form-control" value="<?= $yu ?>" name="youtube_link" placeholder="YOUTUBE CHANNEL">
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">soundcloud.com/</span>
-                    <input type="text" class="form-control" value="<?= $yu ?>" name="soundcloud_link" placeholder="SOUNDCLOUD USERNAME">
+                    <input type="text" class="form-control" value="<?= $su ?>" name="soundcloud_link" placeholder="SOUNDCLOUD USERNAME">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="music_link" value="<?= $mu ?>" placeholder="Spotify link">

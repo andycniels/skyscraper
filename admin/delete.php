@@ -4,7 +4,9 @@ $acid = $_GET['acid'];
 $img = $_GET['img'];
 $linkid = $_GET['linkid'];
 $catid = $_GET ['catid'];
-if (empty($mid . $acid . $img . $linkid . $catid)) {
+$userid = $_GET['userid'];
+$role = $_GET['role'];
+if (empty($mid . $acid . $img . $linkid . $catid . $userid . $role)) {
     header('Location: ../admin');
 }
 if(isset($_GET['mid'])){
@@ -24,5 +26,17 @@ if(isset($_GET['mid'])){
     $filename = "../img/artist/{$img}";
     unlink($filename);
     header('Location: artist');
+}
+if(isset($_GET['userid'])){
+    //If $role = 1 go away
+    if ($role == 1){
+        header('Location: ../admin'); 
+    }else{
+        //Delete user
+        require_once '../dbcon.php';
+        $stmt = $link->prepare("DELETE FROM user WHERE user_id = $userid");
+        $stmt->execute();
+        header('Location: user');
+    }
 }
 ?>
