@@ -77,6 +77,9 @@ $title = str_replace('-', ' ', $title);
 											<li><a href="user">Delete user</a></li>
 										</ul>
 									</li>
+                                    <li>
+										<a href="Adminmanual.pdf" target="_blank"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Admin manual</a>
+									</li>
 								</ul>
 							</div>
 						</div>

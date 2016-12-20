@@ -1,4 +1,4 @@
-        <?php include 'header.php'; 
+<?php include 'header.php'; 
 require_once 'dbcon.php';
 $stmt = $link->prepare("SELECT headline,
                                text,
