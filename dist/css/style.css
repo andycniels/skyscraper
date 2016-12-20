@@ -8539,84 +8539,42 @@ ul.nav.nav-tabs {
   color: #8b8b8b;
   opacity: 0.8;
 }
-.artist-headline {
-  color: #303030;
-  display: block;
-  text-align: center;
-  margin-bottom: 3px;
+.artistwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.artist-headline:before {
-  text-align: center;
-  content: "";
-  position: absolute;
-  width: 20%;
-  bottom: 0;
-  height: 1px;
-  border-bottom: solid 4px #50a4b9;
-}
-.artist {
-  margin: 0;
+.artist-box {
   padding: 0;
+  margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fafafa;
   position: relative;
 }
-.artist img {
-  width: 100%;
-  height: auto;
-  display: block;
+.artist-box-img {
+  padding: 0;
 }
-.artist:nth-child(1) .overlay {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 0;
-}
-.artist:nth-child(2) .overlay {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 0;
-}
-.artist:nth-child(3) .overlay {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 0;
-}
-.artist:nth-child(4) .overlay {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 0;
-}
-.artist-info {
+.artist-box .artist-info {
   position: absolute;
   bottom: 10px;
-  opacity: 0;
+  left: 30px;
 }
-.artist .artist-info .artist-name {
-  font-size: 55px;
-  margin-left: 30px;
-  margin-top: 120px;
-  color: #303030;
-  font-family: 'Source Sans Pro';
-  font-weight: 700;
+.artist-box .artist-info h3 {
+  font-size: 6vw;
 }
-.artist .artist-info .genre {
-  font-size: 20px;
-  margin-left: 30px;
-  color: #50a4b9;
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
-}
-.artist .artist-info .label-name {
-  margin-left: 30px;
-  color: #303030;
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
+.artist-box .social {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
 }
 .affix {
   width: 100%;
@@ -8771,6 +8729,10 @@ nav .social a {
   }
   .tab-content p {
     font-size: 3vw;
+  }
+  .artist-box {
+    height: 170px;
+    width: 100%;
   }
 }
 .submit-wrapper {

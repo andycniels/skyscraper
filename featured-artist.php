@@ -17,53 +17,29 @@
                     </form>
                 </div>    
             </div>
-                        
-            <div class="row artistwrapper">
-                <div class="col-sm-4 col-lg-3 artist">
-                    <div class="overlay">    
-                    </div>
-                    <div class="artist-info">
-                            <h3 class="artist-name">Bishop Allen</h3>
-                            <p class="genre">Rock</p>
-                            <p class="label-name">Labrador</p>
-                        </div>
-                    <img src="img/bishop.jpg" alt="gramofon streaming device" class="img-responsive">
-                </div>
-                <div class="col-lg-3 col-sm-4 artist">
-                    <div class="overlay">
-                    </div>
-                    <div class="artist-info">
-                            <h3 class="artist-name">The Shins</h3>
-                            <p class="genre">Pop-rock</p>
-                            <p class="label-name">Magic Tunes</p>
-                        </div>
-                    <img src="img/shins.jpg" alt="gramofon streaming device" class="img-responsive">
-                </div>
-            
-                <div class="col-lg-3 col-sm-4 artist">
-                    <div class="overlay">
-                    </div>
-                        <div class="artist-info">
-                            <h3 class="artist-name">Foo Fighters</h3>
-                            <p class="genre">rock</p>
-                            <p class="label-name">Costar</p>
-                        </div>
-                    <img src="img/foo.jpg" alt="gramofon streaming device" class="img-responsive">
-                </div>
 
-                <div class="col-lg-3 col-sm-4 artist">
-                    <div class="overlay">
-                    </div>
-                    <div class="artist-info">
-                            <h3 class="artist-name">Wavves</h3>
-                            <p class="genre">Indie rock</p>
-                            <p class="label-name">Labrador</p>
-                        </div>
-                    <img src="img/wavves.jpg" alt="gramofon streaming device" class="img-responsive">
-                </div>
+            <div class="row artistwrapper">
+            	<div class="col-sm-6 artist-box-img">
+            		<img class="img-responsive" src="img/wavves.jpg">
+            	</div>
+
+            	<div class="col-sm-6 artist-box">
+            		<div class="artist-info">
+	            		<h3>Wavves</h3>
+	            		<p>Rock</p>
+	            		<p class="label-name">Labrador</p>          		
+            		</div>
+
+            		<div class="social">
+	            		<a href="#" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+	            		<a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+	            		<a href="#" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>	
+            		</div>  
+            		
+
+            	</div>
             </div>
-            
-        
+                             
         <?php
         include 'footer.php';
         ?>
