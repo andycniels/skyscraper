@@ -1,9 +1,5 @@
 <?php
-ob_start();
-session_start();
-//jeg tager url'en som jeg er på og vælger det sidste, fjerner .php
 $title = basename($_SERVER['PHP_SELF'],'.php');
-// her lave jeg - og til mellemrum
 $title = str_replace('-', ' ', $title);
 ?>
 <!DOCTYPE html>

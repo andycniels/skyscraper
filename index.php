@@ -47,7 +47,7 @@ $stmt = $link->prepare("SELECT headline,
         
         <div class="row row-eq-height">
             <div class="col-sm-6 eq-height hidden-xs">
-                <img class="img-responsive" src="img/<?= $img ?>">
+                <img class="img-responsive" src="img/<?= $img ?>" alt="skyscraper">
             </div>
 
             <div class="col-sm-6 eq-height">
@@ -63,17 +63,17 @@ $stmt = $link->prepare("SELECT headline,
                   <!-- Nav tabs -->
                   <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active">
-                        <a href="#who" aria-controls="home" role="tab" data-toggle="tab">
+                        <a href="#who" aria-controls="who" role="tab" data-toggle="tab">
                             <?= $bh1 ?>
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="#mission" aria-controls="profile" role="tab" data-toggle="tab">
+                        <a href="#mission" aria-controls="mission" role="tab" data-toggle="tab">
                             <?= $bh2 ?>
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="#goal" aria-controls="messages" role="tab" data-toggle="tab">
+                        <a href="#goal" aria-controls="goal" role="tab" data-toggle="tab">
                             <?= $bh3 ?>
                         </a>
                     </li>
@@ -96,11 +96,11 @@ $stmt = $link->prepare("SELECT headline,
 
             <div class="col-sm-6 eq-height quote">
             <div class="holder">
-              <img class="quote-icon" src="icons/quote.png">
+              <img class="quote-icon" src="icons/quote.png" alt="quote">
             	<p><?= $quote ?></p>
               <br>
               <p class="title"><span style="color: white;">JAKOB DEICHMANN</span><br>CEO @SKYSCRAPER</p>
-              <img src="img/signature.png" class="signature">
+              <img src="img/signature.png" class="signature" alt="signature">
               </div>
             </div>
         </div>
@@ -125,6 +125,7 @@ $stmt = $link->prepare("SELECT headline,
                     <p>sales and distribution</p>
                 </div>
 <!--            </div>-->
+        </div>
         </div>
         <?php 
             include('footer.php');
