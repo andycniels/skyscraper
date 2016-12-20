@@ -8539,16 +8539,17 @@ ul.nav.nav-tabs {
   color: #8b8b8b;
   opacity: 0.8;
 }
-.artistwrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+.artistwrapper .artist-box-img {
+  padding: 0;
+  position: relative;
 }
-.artistwrapper:before,
-.artistwrapper:after {
-  content: normal;
+.artistwrapper .artist-box-img:hover {
+  background: red;
+}
+.artistwrapper .artist-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 .artist-box {
   padding: 0;
@@ -8563,9 +8564,6 @@ ul.nav.nav-tabs {
   text-align: center !important;
   color: #000 !important;
   font-size: 2em !important;
-}
-.artist-box-img {
-  padding: 0;
 }
 .artist-box .artist-info {
   position: absolute;

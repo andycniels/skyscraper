@@ -539,18 +539,15 @@ ul.nav.nav-tabs {
    opacity: 0.8;
 }
 
+
+//artist secrtion
 .artistwrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:  flex;
-  flex-wrap: wrap;
+    .artist-box-img {padding: 0; position: relative;
+        &:hover{background: red;}
+    }
+    .artist-info{position: absolute; top: 10px; left: 10px;}
 }
 
-.artistwrapper:before,
-.artistwrapper:after {
-    content: normal;
-}
 
 .artist-box {
     padding: 0;
@@ -563,9 +560,7 @@ ul.nav.nav-tabs {
 }
 .artist-headline{text-align:center !important; color:#000 !important; font-size: 2em !important;}
 
-.artist-box-img {
-    padding: 0;
-}
+
 
 .artist-box .artist-info {
     position: absolute;
