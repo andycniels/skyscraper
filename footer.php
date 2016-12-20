@@ -53,9 +53,9 @@ $stmt = $link->prepare("SELECT street, town, email FROM page_contact");
         <!-- Hero button jump to section -->
         <script>
             $(document).ready(function(){
-                $(".hero-btn").click(function(){
+                $(".down").click(function(){
                     $("html, body").animate({
-                        scrollTop: $(".contact-info").offset().top
+                        scrollTop: $(".row-eq-height").offset().top
                     }, 1000);
                 });
             });

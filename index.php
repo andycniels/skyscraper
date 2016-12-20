@@ -36,10 +36,7 @@ $stmt = $link->prepare("SELECT headline,
                         <h2><span class="text-left">WE ARE</span></h2>
                         <h1>SKYSCRAPER</h1>
                         <h2>AND WE <span class="high-text">BUILD ARTISTS</span></h2>
-                        <a href="#" class="btn btn-outline-inverse btn-lg hero-btn">CONTACT</a>
-                        <div class="circle-down">
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </div>
+                        <a href="#" class="down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -51,7 +48,7 @@ $stmt = $link->prepare("SELECT headline,
             </div>
 
             <div class="col-sm-6 eq-height">
-                <h2><?= $headline ?></h2>
+                <h2 class="abouth2"><?= $headline ?></h2>
                 <p><?= $txt ?></p>
             </div>
         </div>
@@ -130,4 +127,3 @@ $stmt = $link->prepare("SELECT headline,
         <?php 
             include('footer.php');
         ?>
-    </div>

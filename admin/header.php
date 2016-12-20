@@ -23,6 +23,9 @@ $title = str_replace('-', ' ', $title);
             }
             ?>
         </title>
+        <meta name="description" content="WE ARE DEDICATED TO NEW AND INSPIRING ARTISTS. WE'D LOVE TO HEAR FROM YOU. SUBMIT YOUR DEMO BELOW.">
+        <meta name="keywords" content="Youtube, Soundcloud, Spotify, DIGITAL DISRUPION, DEVELOPMENT, MARKETING, B2B">
+        <meta name="JAKOB DEICHMANN" content="Skyscraper">
 		<!-- Fonts fra: https://typekit.com -->
 		<script src="https://use.typekit.net/tod5pae.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>

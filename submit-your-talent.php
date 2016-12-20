@@ -114,7 +114,7 @@ include 'header.php'
 
         <div class="col-sm-6 eq-height">
             <div class="submit-info">
-                <h2>WE BUILD ARTISTS</h2>
+                <h1>WE BUILD ARTISTS</h1>
                 <p><span style="color: #51a4b9">WE ARE DEDICATED</span> TO NEW AND INSPIRING ARTISTS<span style="color: #51a4b9">.</span> WE'D LOVE TO HEAR FROM YOU<span style="color: #51a4b9">.</span> SUBMIT YOUR DEMO BELOW<span style="color: #51a4b9">.</span>
                 </p>
             </div>
@@ -197,4 +197,4 @@ include 'header.php'
 
     <?php include 'footer.php'; ?>
 
-      </div>
+      
