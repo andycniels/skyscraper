@@ -26,6 +26,7 @@
             	<div class="col-sm-6 artist-box">
             		<div class="artist-info">
 	            		<h3>Wavves</h3>
+	            		<p>Lorem ipsum dolor sit amet bla bla bla what up</p>
 	            		<p>Rock</p>
 	            		<p class="label-name">Labrador</p>          		
             		</div>
