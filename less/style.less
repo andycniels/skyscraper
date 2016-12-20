@@ -461,6 +461,10 @@ ul.nav.nav-tabs {
         }
 }
 ///////////////////////// NAV BAR SLUT /////////////////////
+    .artist-info {position: absolute; bottom: 0 !important; opacity: 0 !important; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.73) !important;
+    &:hover{opacity: 70 !important; width: 100% !important; height: auto; }
+}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -541,42 +545,72 @@ ul.nav.nav-tabs {
 
 
 //artist secrtion
-.artistwrapper {
-    .artist-box-img {padding: 0; position: relative;
-        &:hover{background: red;}
+.artist-headline {
+    color: @brand-grey;
+    display: block;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.artist-headline:before {
+    text-align: center;
+    content : "";
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    height: 1px;
+    border-bottom: solid 4px @brand-primary;
+    
+}
+
+.artist {margin: 0; padding: 0; position: relative;}
+
+.center-cropped {
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.artist .overlay{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;    
+}
+
+
+.artist-info {position: absolute; bottom: 0 !important; opacity: 90; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.78);
+}
+
+.artist{
+    p{margin-left: 30px; width: 70%;}
+    .social{
+        a{float:right;}
     }
-    .artist-info{position: absolute; top: 10px; left: 10px;}
 }
 
-
-.artist-box {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #fafafa;
-    position: relative;
-    border-bottom: 8px solid @brand-primary;
-}
-.artist-headline{text-align:center !important; color:#000 !important; font-size: 2em !important;}
-
-
-
-.artist-box .artist-info {
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
+.artist .artist-info .artist-name {
+    font-size: 3em;
+    margin-left: 30px;
+    margin-top: 120px;
+    color: @brand-grey;
+    font-family: @font-primary;
 }
 
-.artist-box .artist-info h3 {
-    font-size: 4vw;
+.artist .artist-info .album-name {
+    font-size: 20px;
+    margin-left: 30px;
+    color: @brand-primary;
+    font-family: @font-primary;
 }
 
-
-.artist-box .social {
-    position: absolute;
-    right: 30px;
-    bottom: 10px;
+.artist .artist-info .services {
+    margin-left: 30px;
+    color: @brand-light-grey;
+    font-family: @font-primary;
 }
 
 
@@ -585,7 +619,7 @@ ul.nav.nav-tabs {
 }
 .main-nav{position: absolute; z-index: 99999; background: rgba(0, 0, 0, 0.87);}
 .top-nav-bar{height: 12vh !important; padding:0 !important;
-    .brand-logo{width: 7vh; padding: 5px 0 0 0; margin-top: 8px;}
+    .brand-logo{width: 5vh; padding: 5px 0 0 0; margin-top: 8px;}
     .burger {float: right; background: none !important; border:none !important; margin-top: 3vh;
         .fa{color:@brand-white; font-size: 1.8em;}
     }

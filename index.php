@@ -130,3 +130,4 @@ $stmt = $link->prepare("SELECT headline,
         <?php 
             include('footer.php');
         ?>
+    </div>
