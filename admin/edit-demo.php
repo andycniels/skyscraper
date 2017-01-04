@@ -13,7 +13,7 @@ if(isset($_GET['mid'])){
     
     //update catid
     $label = 1;
-    $cat = 4;
+    $cat =  4;
     $sql = "UPDATE music SET fk_cat_id=?, fk_label_id=? WHERE music_id = $mid;";
     $stmt = $link->prepare($sql);
     $stmt->bind_param('ii', $cat, $label);
